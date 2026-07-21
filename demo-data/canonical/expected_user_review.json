@@ -1,0 +1,44 @@
+{
+  "review_id": "REVIEW-001",
+  "analysis_run_id": "ANALYSIS-001",
+  "decisions": [
+    {
+      "proposal_id": "P-017",
+      "decision": "REJECT",
+      "result": "KEEP_UNCLASSIFIED",
+      "target_ids": [
+        "CHAT-029"
+      ],
+      "reason": "No existe evidencia suficiente para clasificar."
+    },
+    {
+      "proposal_id": "P-018",
+      "decision": "CORRECT_AND_APPROVE",
+      "result": "ASSIGN_TO_PROJECT",
+      "target_ids": [
+        "CHAT-014"
+      ],
+      "project_id": "PRJ-SCANLINK",
+      "reason": "La instrucción principal protege el protocolo del receptor móvil; la pertenencia dominante es ScanLink."
+    },
+    {
+      "proposal_id": "P-019",
+      "decision": "REJECT",
+      "result": "KEEP_UNCLASSIFIED",
+      "target_ids": [
+        "CHAT-031"
+      ],
+      "reason": "La evidencia sigue siendo insuficiente para elegir un único proyecto."
+    },
+    {
+      "proposal_id": "P-020",
+      "decision": "APPROVE",
+      "result": "MARK_PARTIAL_DUPLICATE_WITHOUT_MERGE",
+      "target_ids": [
+        "CHAT-006"
+      ],
+      "canonical_chat_id": "CHAT-005",
+      "reason": "Existe repetición parcial, pero CHAT-006 contiene una tarea adicional."
+    }
+  ]
+}

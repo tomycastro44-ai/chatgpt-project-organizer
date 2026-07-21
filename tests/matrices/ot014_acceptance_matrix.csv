@@ -1,0 +1,41 @@
+case_id,category,requirement
+D-001,README,English final README exists
+D-002,README,Problem and solution documented
+D-003,README,Setup instructions documented
+D-004,README,Testing instructions documented
+D-005,README,Codex contribution documented
+D-006,README,GPT-5.6 integration documented
+D-007,README,Human decisions documented
+D-008,README,Privacy and security documented
+D-009,README,Limitations documented
+D-010,DEVPOST,Apps for Your Life selected
+D-011,DEVPOST,Ready-to-paste English content exists
+D-012,DEVPOST,Repository URL placeholder explicit
+D-013,DEVPOST,YouTube URL placeholder explicit
+D-014,DEVPOST,Codex feedback placeholder explicit
+D-015,RULES,Official requirements checklist exists
+D-016,RULES,Deadline recorded
+D-017,RULES,Video under 3 minutes required
+D-018,RULES,Public YouTube requirement recorded
+D-019,RULES,Repository sharing requirement recorded
+D-020,SCREENSHOTS,Seven desktop captures exist
+D-021,SCREENSHOTS,Two mobile captures exist
+D-022,SCREENSHOTS,Screenshot overview exists
+D-023,VIDEO,Narrated MP4 exists
+D-024,VIDEO,MP4 duration under 180 seconds
+D-025,VIDEO,Audio stream exists
+D-026,VIDEO,English SRT exists
+D-027,VIDEO,Narration covers product
+D-028,VIDEO,Narration covers Codex
+D-029,VIDEO,Narration covers GPT-5.6
+D-030,REPO,MIT license exists
+D-031,REPO,No runtime database in package
+D-032,REPO,No .env secrets in package
+D-033,REPO,No node_modules or .venv
+D-034,REPO,Demo data exists
+D-035,REPO,Final screenshots included
+D-036,REPO,Publishing instructions exist
+D-037,BUILD,Build history exists
+D-038,BUILD,Architecture decisions preserved
+D-039,INTEGRITY,Original source immutability docs preserved
+D-040,STATUS,Account-dependent steps isolated

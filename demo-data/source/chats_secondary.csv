@@ -1,0 +1,14 @@
+chat_id,title,created_at,transcript
+CHAT-004,Copia - Reparto v12 validada,2026-06-02T08:00:00+02:00,"USER: La v12 con sector continuo ya está probada y funciona.
+ASSISTANT: v12 queda validada como versión vigente.
+USER: Mantén v10 como versión anterior de referencia."
+CHAT-033,Inventario sigue activo,2026-07-12T09:00:00+02:00,"USER: El inventario sigue en uso. La mejora multiusuario queda aprobada para una fase futura.
+ASSISTANT: El proyecto permanece ACTIVO; no debe cerrarse."
+CHAT-012,Corrección del firewall,2026-07-05T12:00:00+02:00,USER: Al restaurar las reglas TCP 37841 y HTTP 37842 el móvil volvió a conectar.
+CHAT-013,Mejora visual del escáner,2026-07-06T16:00:00+02:00,USER: La próxima fase aprobada es mejorar solo la interfaz APK sin tocar la lógica.
+CHAT-017,Audio descartado en pedidos,2026-06-17T12:00:00+02:00,"USER: La opción de audio queda descartada. No hay más mejoras aprobadas.
+ASSISTANT: El proyecto puede considerarse terminado."
+CHAT-021,Arquitectura multiusuario,2026-07-08T09:00:00+02:00,USER: Queda aprobada una futura arquitectura multiusuario con base central.
+CHAT-026,Arandela DIN más ancha,2026-07-17T09:20:00+02:00,"USER: La arandela DIN 9021, ¿cuál es la equivalente todavía más ancha?"
+CHAT-027,Talla de camiseta,2026-07-11T20:00:00+02:00,USER: No sé si comprar talla L o XL.
+CHAT-030,Consulta sobre liderazgo,2026-07-11T11:00:00+02:00,USER: ¿Un líder nace o se hace?

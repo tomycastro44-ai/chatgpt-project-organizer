@@ -1,0 +1,363 @@
+{
+  "analysis_run_id": "ANALYSIS-001",
+  "safe_proposal_ids": [
+    "P-001",
+    "P-002",
+    "P-003",
+    "P-004",
+    "P-005",
+    "P-006",
+    "P-007",
+    "P-008",
+    "P-009",
+    "P-010",
+    "P-011",
+    "P-012",
+    "P-013",
+    "P-014",
+    "P-015",
+    "P-016"
+  ],
+  "exception_proposal_ids": [
+    "P-017",
+    "P-018",
+    "P-019",
+    "P-020"
+  ],
+  "protected_chat_ids": [
+    "CHAT-014",
+    "CHAT-029",
+    "CHAT-031"
+  ],
+  "proposal_items": [
+    {
+      "id": "P-001",
+      "operation": "CREATE_PROJECT",
+      "target_ids": [
+        "PRJ-ROUTEFLOW"
+      ],
+      "chat_ids": [
+        "CHAT-001",
+        "CHAT-002",
+        "CHAT-003",
+        "CHAT-005",
+        "CHAT-006"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-001",
+        "E-002",
+        "E-003"
+      ],
+      "reason": "Relación semántica, versiones y decisiones explícitas coherentes."
+    },
+    {
+      "id": "P-002",
+      "operation": "MARK_EXACT_DUPLICATE",
+      "target_ids": [
+        "CHAT-004"
+      ],
+      "canonical_chat_id": "CHAT-003",
+      "chat_ids": [
+        "CHAT-003",
+        "CHAT-004"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-004"
+      ],
+      "reason": "Fingerprint normalizado idéntico."
+    },
+    {
+      "id": "P-003",
+      "operation": "MARK_PREVIOUS_VERSION",
+      "target_ids": [
+        "CHAT-001"
+      ],
+      "version": "v10",
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-001"
+      ],
+      "reason": "v12 fue validada posteriormente como vigente."
+    },
+    {
+      "id": "P-004",
+      "operation": "MARK_DISCARDED_VERSION",
+      "target_ids": [
+        "CHAT-002"
+      ],
+      "version": "v11",
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-002"
+      ],
+      "reason": "Rechazo explícito."
+    },
+    {
+      "id": "P-005",
+      "operation": "CREATE_PROJECT",
+      "target_ids": [
+        "PRJ-STOCKCORE"
+      ],
+      "chat_ids": [
+        "CHAT-007",
+        "CHAT-008",
+        "CHAT-009",
+        "CHAT-010",
+        "CHAT-032",
+        "CHAT-033"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008"
+      ],
+      "reason": "Base vigente y estado actual confirmados explícitamente."
+    },
+    {
+      "id": "P-006",
+      "operation": "SET_PROJECT_STATE",
+      "target_ids": [
+        "PRJ-STOCKCORE"
+      ],
+      "state": "ACTIVO",
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-008"
+      ],
+      "reason": "La decisión más reciente confirma uso y nueva fase."
+    },
+    {
+      "id": "P-007",
+      "operation": "CREATE_PROJECT",
+      "target_ids": [
+        "PRJ-SCANLINK"
+      ],
+      "chat_ids": [
+        "CHAT-011",
+        "CHAT-012",
+        "CHAT-013"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-009",
+        "E-010"
+      ],
+      "reason": "Componente funcional con versión, tareas y continuidad propias."
+    },
+    {
+      "id": "P-008",
+      "operation": "CREATE_PROJECT",
+      "target_ids": [
+        "PRJ-ORDERDESK"
+      ],
+      "chat_ids": [
+        "CHAT-015",
+        "CHAT-016",
+        "CHAT-017"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-012"
+      ],
+      "reason": "Proyecto y cierre explícitos."
+    },
+    {
+      "id": "P-009",
+      "operation": "SET_PROJECT_STATE",
+      "target_ids": [
+        "PRJ-ORDERDESK"
+      ],
+      "state": "CERRADO",
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-012"
+      ],
+      "reason": "No quedan tareas aprobadas."
+    },
+    {
+      "id": "P-010",
+      "operation": "CREATE_PROJECT",
+      "target_ids": [
+        "PRJ-ISSUETRACK"
+      ],
+      "chat_ids": [
+        "CHAT-018",
+        "CHAT-019",
+        "CHAT-020"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-013"
+      ],
+      "reason": "Pausa expresamente confirmada."
+    },
+    {
+      "id": "P-011",
+      "operation": "SET_PROJECT_STATE",
+      "target_ids": [
+        "PRJ-ISSUETRACK"
+      ],
+      "state": "EN_PAUSA",
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-013"
+      ],
+      "reason": "Estado explícito."
+    },
+    {
+      "id": "P-012",
+      "operation": "CREATE_PROJECT",
+      "target_ids": [
+        "PRJ-MULTIUSER"
+      ],
+      "chat_ids": [
+        "CHAT-021",
+        "CHAT-022"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-014"
+      ],
+      "reason": "Alcance aprobado y no iniciado."
+    },
+    {
+      "id": "P-013",
+      "operation": "SET_PROJECT_STATE",
+      "target_ids": [
+        "PRJ-MULTIUSER"
+      ],
+      "state": "PENDIENTE",
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-014"
+      ],
+      "reason": "Proyecto aprobado pero no iniciado."
+    },
+    {
+      "id": "P-014",
+      "operation": "CREATE_PROJECT",
+      "target_ids": [
+        "PRJ-VOICE-ARCHIVE"
+      ],
+      "chat_ids": [
+        "CHAT-023",
+        "CHAT-024",
+        "CHAT-025"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-015"
+      ],
+      "reason": "Iniciativa separable y cerrada explícitamente."
+    },
+    {
+      "id": "P-015",
+      "operation": "SET_PROJECT_STATE",
+      "target_ids": [
+        "PRJ-VOICE-ARCHIVE"
+      ],
+      "state": "ARCHIVADO",
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-015"
+      ],
+      "reason": "La iniciativa se conserva solo como referencia histórica."
+    },
+    {
+      "id": "P-016",
+      "operation": "KEEP_INDEPENDENT",
+      "target_ids": [
+        "CHAT-026",
+        "CHAT-027",
+        "CHAT-028",
+        "CHAT-030"
+      ],
+      "confidence": "ALTA",
+      "review_required": false,
+      "evidence_ids": [
+        "E-016"
+      ],
+      "reason": "Conversaciones autocontenidas sin continuidad de proyecto."
+    },
+    {
+      "id": "P-017",
+      "operation": "KEEP_UNCLASSIFIED",
+      "target_ids": [
+        "CHAT-029"
+      ],
+      "confidence": "BAJA",
+      "review_required": true,
+      "evidence_ids": [
+        "E-017"
+      ],
+      "reason": "Información insuficiente para asignación segura."
+    },
+    {
+      "id": "P-018",
+      "operation": "REVIEW_MEMBERSHIP",
+      "target_ids": [
+        "CHAT-014"
+      ],
+      "candidate_project_ids": [
+        "PRJ-SCANLINK",
+        "PRJ-STOCKCORE"
+      ],
+      "confidence": "MEDIA",
+      "review_required": true,
+      "evidence_ids": [
+        "E-011"
+      ],
+      "reason": "Afecta al receptor móvil y al buscador del inventario."
+    },
+    {
+      "id": "P-019",
+      "operation": "REVIEW_MEMBERSHIP",
+      "target_ids": [
+        "CHAT-031"
+      ],
+      "candidate_project_ids": [
+        "PRJ-SCANLINK",
+        "PRJ-STOCKCORE"
+      ],
+      "confidence": "BAJA",
+      "review_required": true,
+      "evidence_ids": [
+        "E-011"
+      ],
+      "reason": "Referencia simultánea a conexión móvil y búsqueda de inventario."
+    },
+    {
+      "id": "P-020",
+      "operation": "MARK_PARTIAL_DUPLICATE",
+      "target_ids": [
+        "CHAT-006"
+      ],
+      "canonical_chat_id": "CHAT-005",
+      "confidence": "MEDIA",
+      "review_required": true,
+      "evidence_ids": [
+        "E-018"
+      ],
+      "reason": "Repite una tarea, pero añade otra; no debe fusionarse automáticamente."
+    }
+  ]
+}

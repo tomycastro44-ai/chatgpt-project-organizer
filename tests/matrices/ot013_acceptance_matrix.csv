@@ -1,0 +1,51 @@
+case_id,category,requirement,expected
+RT-001,INSTALL,Python clean environment,requirements install succeeds
+RT-002,INSTALL,Node clean environment,npm ci succeeds
+RT-003,BACKEND,Backend unit and integration suite,all tests pass
+RT-004,FRONTEND,Frontend component suite,all tests pass
+RT-005,BUILD,TypeScript production build,build succeeds
+RT-006,DEPENDENCIES,Python dependency consistency,pip check succeeds
+RT-007,DEPENDENCIES,Production npm audit,no high severity production vulnerability
+RT-008,SYNTAX,Backend compile check,compileall succeeds
+RT-009,STARTUP,FastAPI application startup,health endpoint returns ok
+RT-010,STARTUP,Vite development server startup,HTML is served
+RT-011,INTEGRATION,Frontend proxy to backend,health works through /api
+RT-012,IMPORT,Approved demo import,3 sources accepted
+RT-013,IMPORT,Canonical chat count,33 chats
+RT-014,IMPORT,Canonical message count,51 messages
+RT-015,INTEGRITY,Source SHA-256 before and after,unchanged
+RT-016,INTEGRITY,Stored originals flag,true
+RT-017,INTEGRITY,Original modification count,zero
+RT-018,ANALYSIS,Finding count,45 findings
+RT-019,ANALYSIS,Evidence count,61 evidence records
+RT-020,ANALYSIS,Exact duplicate,one relation
+RT-021,ANALYSIS,Partial duplicate,one reviewable relation
+RT-022,ANALYSIS,Version findings,nine resolved versions
+RT-023,SEMANTIC,DEMO semantic mode,completes without API key
+RT-024,SEMANTIC,Project count,seven projects
+RT-025,SEMANTIC,Membership count,29 memberships
+RT-026,SEMANTIC,Exception count,four exceptions
+RT-027,SEMANTIC,Independent chats,four chats
+RT-028,SEMANTIC,Unclassified chats,one before review
+RT-029,OPENAI,LIVE capability without key,reported unavailable
+RT-030,OPENAI,LIVE request without key,blocked with 409
+RT-031,OPENAI,Frontend secret isolation,no API key references
+RT-032,PROPOSALS,Proposal count,20 items
+RT-033,PROPOSALS,Safe proposal count,16 items
+RT-034,PROPOSALS,Exception proposal count,four items
+RT-035,CONTROL,Apply before approval,blocked
+RT-036,CONTROL,Safe batch approval,explicit approval recorded
+RT-037,REVIEW,CHAT-029 review,rejected and unclassified
+RT-038,REVIEW,CHAT-014 correction,assigned to PRJ-SCANLINK
+RT-039,REVIEW,CHAT-031 review,rejected and unclassified
+RT-040,REVIEW,CHAT-006 partial duplicate,recorded without merge
+RT-041,PREVIEW,Mandatory before/after preview,generated
+RT-042,PREVIEW,Unresolved exception list,empty after review
+RT-043,APPLY,Simulated apply,status APPLIED
+RT-044,APPLY,Workspace project count,seven projects
+RT-045,AUDIT,Ordered audit history,nine sequential events
+RT-046,UNDO,Exact hash restoration,restored hash equals before hash
+RT-047,UNDO,Audit preservation,true
+RT-048,UNDO,Repeated Undo,blocked
+RT-049,REPEATABILITY,Two demo executions,same normalized result
+RT-050,PACKAGE,Clean release package,no runtime dependencies or secrets

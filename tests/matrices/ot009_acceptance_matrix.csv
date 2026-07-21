@@ -1,0 +1,31 @@
+case_id,category,scenario,input,expected
+IT-001,FORMAT,Import approved JSON,chats_primary.json,13 chats normalized
+IT-002,FORMAT,Import approved CSV,chats_secondary.csv,9 chats normalized
+IT-003,FORMAT,Import approved TXT,chats_notes.txt,11 chats normalized
+IT-004,BATCH,Import approved dataset,3 sources,33 chats persisted
+IT-005,INTEGRITY,Approved sources unchanged,demo-data/source,SHA-256 unchanged
+IT-006,STORAGE,Immutable runtime copies,data/imports,Read-only copies and hashes
+IT-007,ERROR,Invalid JSON isolated,mixed batch,Valid source remains imported
+IT-008,ERROR,Invalid record isolated,JSON record,Other records remain imported
+IT-009,ERROR,Unsupported format,MD source,Source rejected with structured issue
+IT-010,LIMIT,Maximum file count,API upload,Request rejected beyond limit
+IT-011,LIMIT,Maximum file size,API upload,Request rejected before truncated copy
+IT-012,DATABASE,Import entities created,SQLite,Six expected domain tables
+IT-013,IDENTITY,Repeated imports,Same external IDs,Distinct internal UUIDs
+IT-014,FINGERPRINT,Exact duplicate content,CHAT-003/CHAT-004,Same fingerprint
+IT-015,API,Import history,GET /imports,Latest batches returned
+IT-016,API,Import detail,GET /imports/{id},Sources and issues returned
+IT-017,API,Normalized chats,GET /imports/{id}/chats,Messages returned in order
+IT-018,UI,Local source selection,React import page,JSON/CSV/TXT accepted
+IT-019,UI,Approved demo action,React import page,Result rendered
+IT-020,RESPONSIVE,Mobile layout,<=900px,Import panels stack
+IT-021,SECURITY,Filename traversal,Storage adapter,Basename sanitized
+IT-022,SECURITY,No secrets in response,System/import API,API keys absent
+IT-023,SCOPE,No GPT call,Repository,No semantic analysis invoked
+IT-024,SCOPE,No apply/undo,Repository,Not implemented in O.T. 009
+IT-025,BUILD,Backend tests,pytest,All pass
+IT-026,BUILD,Frontend tests,Vitest,All pass
+IT-027,BUILD,Production bundle,Vite,Build passes
+IT-028,INSTALL,Clean Python install,requirements.txt,pip check passes
+IT-029,INSTALL,Clean npm install,package-lock.json,npm ci passes
+IT-030,RUNTIME,Backend and frontend startup,Scripts,Health and UI available

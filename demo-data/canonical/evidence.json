@@ -1,0 +1,196 @@
+{
+  "evidence": [
+    {
+      "id": "E-001",
+      "chat_ids": [
+        "CHAT-003"
+      ],
+      "quote": "v12 queda validada como versión vigente.",
+      "kind": "validated_version",
+      "precedence": 3,
+      "note": "Define la versión actual de RouteFlow."
+    },
+    {
+      "id": "E-002",
+      "chat_ids": [
+        "CHAT-002"
+      ],
+      "quote": "No usar esta versión como base.",
+      "kind": "explicit_rejection",
+      "precedence": 1,
+      "note": "Descarta v11."
+    },
+    {
+      "id": "E-003",
+      "chat_ids": [
+        "CHAT-005",
+        "CHAT-006"
+      ],
+      "quote": "Queda pendiente ajustar el PDF partido a dos columnas.",
+      "kind": "explicit_task",
+      "precedence": 5,
+      "note": "Tarea repetida en dos chats."
+    },
+    {
+      "id": "E-004",
+      "chat_ids": [
+        "CHAT-003",
+        "CHAT-004"
+      ],
+      "quote": "Contenido normalizado idéntico.",
+      "kind": "exact_duplicate",
+      "precedence": 4,
+      "note": "Mismo fingerprint de contenido."
+    },
+    {
+      "id": "E-005",
+      "chat_ids": [
+        "CHAT-007",
+        "CHAT-009"
+      ],
+      "quote": "La única base vigente es V8 + SCAN WW estable.",
+      "kind": "explicit_current_base",
+      "precedence": 1,
+      "note": "Define base actual de StockCore."
+    },
+    {
+      "id": "E-006",
+      "chat_ids": [
+        "CHAT-008",
+        "CHAT-009"
+      ],
+      "quote": "Se descartan V9 y V9.1.",
+      "kind": "explicit_rejection",
+      "precedence": 1,
+      "note": "Versiones de voz no vigentes."
+    },
+    {
+      "id": "E-007",
+      "chat_ids": [
+        "CHAT-010"
+      ],
+      "quote": "Queda pendiente mejorarlo.",
+      "kind": "explicit_task",
+      "precedence": 5,
+      "note": "Mejora pendiente del buscador del mapa."
+    },
+    {
+      "id": "E-008",
+      "chat_ids": [
+        "CHAT-032",
+        "CHAT-033"
+      ],
+      "quote": "El inventario sigue en uso... permanece ACTIVO.",
+      "kind": "recent_explicit_override",
+      "precedence": 1,
+      "note": "La decisión reciente invalida el cierre sugerido anteriormente."
+    },
+    {
+      "id": "E-009",
+      "chat_ids": [
+        "CHAT-011"
+      ],
+      "quote": "SCAN WW V2 queda validado.",
+      "kind": "validated_version",
+      "precedence": 3,
+      "note": "Versión actual del escáner."
+    },
+    {
+      "id": "E-010",
+      "chat_ids": [
+        "CHAT-013"
+      ],
+      "quote": "Mejorar solo la interfaz APK sin tocar la lógica.",
+      "kind": "approved_task",
+      "precedence": 2,
+      "note": "Nueva fase aprobada."
+    },
+    {
+      "id": "E-011",
+      "chat_ids": [
+        "CHAT-014",
+        "CHAT-031"
+      ],
+      "quote": "buscador... recibe un código desde el móvil",
+      "kind": "ambiguous_relation",
+      "precedence": 7,
+      "note": "Puede pertenecer a StockCore, ScanLink o ambos."
+    },
+    {
+      "id": "E-012",
+      "chat_ids": [
+        "CHAT-015",
+        "CHAT-017"
+      ],
+      "quote": "versión final estable... no hay más mejoras aprobadas.",
+      "kind": "explicit_completion",
+      "precedence": 1,
+      "note": "Permite estado CERRADO."
+    },
+    {
+      "id": "E-013",
+      "chat_ids": [
+        "CHAT-020"
+      ],
+      "quote": "El proyecto queda EN_PAUSA, no cerrado.",
+      "kind": "explicit_state",
+      "precedence": 1,
+      "note": "Estado confirmado."
+    },
+    {
+      "id": "E-014",
+      "chat_ids": [
+        "CHAT-021",
+        "CHAT-022"
+      ],
+      "quote": "aprobada... no implementarlo todavía.",
+      "kind": "approved_not_started",
+      "precedence": 2,
+      "note": "Estado PENDIENTE."
+    },
+    {
+      "id": "E-015",
+      "chat_ids": [
+        "CHAT-025"
+      ],
+      "quote": "La iniciativa de voz queda archivada.",
+      "kind": "explicit_state",
+      "precedence": 1,
+      "note": "Estado ARCHIVADO."
+    },
+    {
+      "id": "E-016",
+      "chat_ids": [
+        "CHAT-026",
+        "CHAT-027",
+        "CHAT-028",
+        "CHAT-030"
+      ],
+      "quote": "Conversaciones autocontenidas sin continuidad de proyecto.",
+      "kind": "independent_chat",
+      "precedence": 7,
+      "note": "Mantener independientes."
+    },
+    {
+      "id": "E-017",
+      "chat_ids": [
+        "CHAT-029"
+      ],
+      "quote": "Esto hay que ordenarlo más adelante.",
+      "kind": "insufficient_evidence",
+      "precedence": 8,
+      "note": "No hay entidad, objetivo ni contexto suficientes."
+    },
+    {
+      "id": "E-018",
+      "chat_ids": [
+        "CHAT-005",
+        "CHAT-006"
+      ],
+      "quote": "Mismo pendiente con contenido adicional en CHAT-006.",
+      "kind": "partial_duplicate",
+      "precedence": 7,
+      "note": "CHAT-006 amplía el contenido y no debe eliminarse."
+    }
+  ]
+}

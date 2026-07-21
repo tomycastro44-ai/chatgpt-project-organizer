@@ -1,0 +1,69 @@
+case_id,category,scenario,input,expected
+AT-001,DATA,Proposal run references completed semantic run,semantic_run_id,Run created
+AT-002,DATA,Incomplete semantic run rejected,status != COMPLETED,HTTP 422
+AT-003,PROPOSAL,Canonical demo produces 20 proposals,DEMO semantic run,20 items
+AT-004,PROPOSAL,Safe proposal count,Canonical fixture,16
+AT-005,PROPOSAL,Exception count,Canonical fixture,4
+AT-006,PROPOSAL,Allowed confidence values,All items,ALTA/MEDIA/BAJA only
+AT-007,PROPOSAL,Safe items initially ready,Safe items,READY
+AT-008,PROPOSAL,Exceptions initially pending,Review items,PENDING_REVIEW
+AT-009,APPROVAL,Safe batch requires explicit approval,Apply before approval,Blocked
+AT-010,APPROVAL,Approve safe batch once,approve-safe,16 items approved
+AT-011,APPROVAL,Repeated safe approval is idempotent,approve-safe twice,No duplicate review
+AT-012,REVIEW,Approve exception,APPROVE,Status approved
+AT-013,REVIEW,Correct exception,CORRECT,Correction persisted
+AT-014,REVIEW,Reject exception,REJECT,Status rejected
+AT-015,REVIEW,Keep unchanged,KEEP_UNCHANGED,Status kept
+AT-016,REVIEW,Safe item cannot be individually reviewed,Safe proposal,HTTP 422
+AT-017,REVIEW,Invalid destination rejected,Unknown project key,HTTP 422
+AT-018,REVIEW,Review history persisted,Repeated decisions,Latest review exposed
+AT-019,PREVIEW,Preview exposes before state,Initial workspace,33 unclassified chats
+AT-020,PREVIEW,Preview exposes proposed state,Approved safe batch,7 projects
+AT-021,PREVIEW,Preview does not modify workspace,Preview only,Current hash unchanged
+AT-022,PREVIEW,Unresolved exceptions protected,No decisions,4 protected chats
+AT-023,PREVIEW,Rejected membership becomes unclassified,P-019 rejected,CHAT-031 unclassified
+AT-024,PREVIEW,Corrected membership assigned once,P-018 corrected,CHAT-014 in ScanLink
+AT-025,PREVIEW,Exact duplicate recorded,P-002 approved,CHAT-004→CHAT-003
+AT-026,PREVIEW,Exact duplicate not assigned independently,CHAT-004,No project membership
+AT-027,PREVIEW,Partial duplicate never auto-merged,P-020 approved,merged=false
+AT-028,PREVIEW,Independent chats retained,P-016 approved,4 independent chats
+AT-029,PREVIEW,Originals remain immutable,All preview states,originals_modified=false
+AT-030,PREVIEW,State hash deterministic,Same reviews,Same proposed hash
+AT-031,APPLY,Apply requires approved operations,No approved items,Blocked
+AT-032,APPLY,Apply creates operation snapshot,Approved run,Before/after stored
+AT-033,APPLY,Applied state equals preview,Same run,Hash equality
+AT-034,APPLY,Only approved/corrected items applied,Mixed decisions,Rejected excluded
+AT-035,APPLY,Unresolved exceptions remain protected,Pending reviews,Not applied
+AT-036,APPLY,Workspace revision increments,Apply,Revision +1
+AT-037,APPLY,Second active apply blocked,Active operation,HTTP 409
+AT-038,APPLY,Original source files untouched,After apply,SHA-256 unchanged
+AT-039,AUDIT,Proposal creation audited,Create run,PROPOSAL_RUN_CREATED
+AT-040,AUDIT,Safe approval audited,Approve batch,SAFE_BATCH_APPROVED
+AT-041,AUDIT,Each review audited,Four reviews,Four events
+AT-042,AUDIT,Preview audited,Preview,PREVIEW_GENERATED
+AT-043,AUDIT,Apply audited,Apply,OPERATIONS_APPLIED
+AT-044,AUDIT,Audit sequence monotonic,All events,1..N
+AT-045,UNDO,Undo requires active operation,Undone/unknown operation,Blocked
+AT-046,UNDO,Undo validates current after hash,Changed workspace,Blocked
+AT-047,UNDO,Undo restores exact before state,Applied operation,Restored hash=before hash
+AT-048,UNDO,Undo preserves audit history,Undo,History retained
+AT-049,UNDO,Undo does not delete applied operation,After undo,Status UNDONE
+AT-050,UNDO,Undo never modifies originals,After undo,originals_modified=false
+AT-051,API,Proposal endpoints versioned,/api/v1,Available
+AT-052,API,Audit endpoint returns ordered events,Run audit,Ordered response
+AT-053,UI,Safe and exception sections separated,Proposals page,Distinct sections
+AT-054,UI,Correction destination selectable,Membership exception,Candidate selector
+AT-055,UI,Mandatory preview visible,Approved safe batch,Preview control
+AT-056,UI,Apply action explicit,Preview ready,Apply button
+AT-057,UI,Undo action explicit,Applied operation,Undo button
+AT-058,UI,Responsive review cards,Mobile viewport,Single column
+AT-059,SECURITY,No API key in frontend,Frontend source,No key
+AT-060,SECURITY,No destructive source operation,Proposal service,Derived state only
+AT-061,DATABASE,Foreign keys enabled,SQLite,PRAGMA=1
+AT-062,DATABASE,OT012 schema registered,schema_metadata,ot012-proposals
+AT-063,REGRESSION,Import tests pass,OT009 layer,No regression
+AT-064,REGRESSION,Deterministic tests pass,OT010 layer,No regression
+AT-065,REGRESSION,Semantic tests pass,OT011 layer,No regression
+AT-066,BUILD,Frontend production build,TypeScript/Vite,OK
+AT-067,BUILD,Clean Python dependency check,Isolated venv,OK
+AT-068,BUILD,Production npm vulnerabilities,npm audit --omit=dev,0

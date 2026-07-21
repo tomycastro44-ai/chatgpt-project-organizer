@@ -1,0 +1,303 @@
+{
+  "operation_batch_id": "APPLY-002",
+  "based_on_review_id": "REVIEW-001",
+  "approved_safe_proposal_ids": [
+    "P-001",
+    "P-002",
+    "P-003",
+    "P-004",
+    "P-005",
+    "P-006",
+    "P-007",
+    "P-008",
+    "P-009",
+    "P-010",
+    "P-011",
+    "P-012",
+    "P-013",
+    "P-014",
+    "P-015",
+    "P-016"
+  ],
+  "approved_exception_proposal_ids": [
+    "P-018",
+    "P-020"
+  ],
+  "corrected_proposal_ids": [
+    "P-018"
+  ],
+  "rejected_proposal_ids": [
+    "P-017",
+    "P-019"
+  ],
+  "projects": [
+    {
+      "id": "PRJ-ROUTEFLOW",
+      "name": "RouteFlow — Planificación de reparto",
+      "state": "ACTIVO",
+      "current_version": "v12",
+      "previous_versions": [
+        "v10"
+      ],
+      "discarded_versions": [
+        "v11"
+      ],
+      "phase": "Optimización operativa y documentos",
+      "approved_decisions": [
+        "Usar v12 como base vigente",
+        "Conservar v10 como referencia"
+      ],
+      "discarded_decisions": [
+        "Usar v11 como base"
+      ],
+      "pending_tasks": [
+        "Ajustar PDF partido a dos columnas",
+        "Separar WhatsApp Oficina por repartidor"
+      ],
+      "blockers": [],
+      "last_confirmed_advance": "v12 validada",
+      "next_probable_step": "Resolver tareas documentales sin alterar la lógica estable",
+      "chat_ids": [
+        "CHAT-001",
+        "CHAT-002",
+        "CHAT-003",
+        "CHAT-005",
+        "CHAT-006"
+      ],
+      "doubtful_chat_ids": [],
+      "evidence_ids": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-018"
+      ]
+    },
+    {
+      "id": "PRJ-STOCKCORE",
+      "name": "StockCore — Control de inventario",
+      "state": "ACTIVO",
+      "current_version": "V8 + SCAN",
+      "previous_versions": [],
+      "discarded_versions": [
+        "V9",
+        "V9.1"
+      ],
+      "phase": "Operación estable con mejoras controladas",
+      "approved_decisions": [
+        "Mantener V8 + SCAN como única base vigente",
+        "Cerrar la fase de voz"
+      ],
+      "discarded_decisions": [
+        "Cerrar el proyecto después de la prueba de voz"
+      ],
+      "pending_tasks": [
+        "Mejorar buscador del mapa de racks"
+      ],
+      "blockers": [],
+      "last_confirmed_advance": "Inventario en uso y base oficial confirmada",
+      "next_probable_step": "Mejora localizada del buscador",
+      "chat_ids": [
+        "CHAT-007",
+        "CHAT-008",
+        "CHAT-009",
+        "CHAT-010",
+        "CHAT-032",
+        "CHAT-033"
+      ],
+      "doubtful_chat_ids": [
+        "CHAT-031"
+      ],
+      "evidence_ids": [
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-011"
+      ]
+    },
+    {
+      "id": "PRJ-SCANLINK",
+      "name": "ScanLink — Escáner móvil",
+      "state": "ACTIVO",
+      "current_version": "V2",
+      "previous_versions": [],
+      "discarded_versions": [],
+      "phase": "Mejora visual sin cambio de protocolo",
+      "approved_decisions": [
+        "Mantener protocolo de conexión",
+        "Mejorar únicamente la interfaz APK"
+      ],
+      "discarded_decisions": [],
+      "pending_tasks": [
+        "Aplicar mejora visual del APK"
+      ],
+      "blockers": [],
+      "last_confirmed_advance": "V2 validada y conexión recuperada",
+      "next_probable_step": "Interfaz APK",
+      "chat_ids": [
+        "CHAT-011",
+        "CHAT-012",
+        "CHAT-013",
+        "CHAT-014"
+      ],
+      "doubtful_chat_ids": [
+        "CHAT-031"
+      ],
+      "evidence_ids": [
+        "E-009",
+        "E-010",
+        "E-011"
+      ]
+    },
+    {
+      "id": "PRJ-ORDERDESK",
+      "name": "OrderDesk — Control de pedidos",
+      "state": "CERRADO",
+      "current_version": "1.0.9",
+      "previous_versions": [],
+      "discarded_versions": [],
+      "phase": "Finalizada",
+      "approved_decisions": [
+        "Mantener 1.0.9 como versión final"
+      ],
+      "discarded_decisions": [
+        "Añadir avisos por audio"
+      ],
+      "pending_tasks": [],
+      "blockers": [],
+      "last_confirmed_advance": "Versión final instalada y validada",
+      "next_probable_step": null,
+      "chat_ids": [
+        "CHAT-015",
+        "CHAT-016",
+        "CHAT-017"
+      ],
+      "doubtful_chat_ids": [],
+      "evidence_ids": [
+        "E-012"
+      ]
+    },
+    {
+      "id": "PRJ-ISSUETRACK",
+      "name": "IssueTrack — Gestión de incidencias",
+      "state": "EN_PAUSA",
+      "current_version": "V41",
+      "previous_versions": [],
+      "discarded_versions": [],
+      "phase": "Despliegue pendiente de revisión de red",
+      "approved_decisions": [
+        "Conservar V41 y el instalador Central"
+      ],
+      "discarded_decisions": [],
+      "pending_tasks": [
+        "Revisar red antes del despliegue a Mostrador y Oficina"
+      ],
+      "blockers": [
+        "Validación de red"
+      ],
+      "last_confirmed_advance": "Instalador Central validado",
+      "next_probable_step": "Retomar despliegue tras revisar red",
+      "chat_ids": [
+        "CHAT-018",
+        "CHAT-019",
+        "CHAT-020"
+      ],
+      "doubtful_chat_ids": [],
+      "evidence_ids": [
+        "E-013"
+      ]
+    },
+    {
+      "id": "PRJ-MULTIUSER",
+      "name": "Multiuser Inventory — Base central",
+      "state": "PENDIENTE",
+      "current_version": null,
+      "previous_versions": [],
+      "discarded_versions": [],
+      "phase": "Aprobada, no iniciada",
+      "approved_decisions": [
+        "Arquitectura multiusuario con base central"
+      ],
+      "discarded_decisions": [],
+      "pending_tasks": [
+        "Iniciar diseño cuando se autorice la fase"
+      ],
+      "blockers": [
+        "No iniciar todavía"
+      ],
+      "last_confirmed_advance": "Alcance aprobado",
+      "next_probable_step": "Definir arquitectura cuando se abra la fase",
+      "chat_ids": [
+        "CHAT-021",
+        "CHAT-022"
+      ],
+      "doubtful_chat_ids": [],
+      "evidence_ids": [
+        "E-014"
+      ]
+    },
+    {
+      "id": "PRJ-VOICE-ARCHIVE",
+      "name": "VoiceSearch WW — Consulta por voz",
+      "state": "ARCHIVADO",
+      "current_version": null,
+      "previous_versions": [
+        "V9",
+        "V9.1"
+      ],
+      "discarded_versions": [
+        "V9",
+        "V9.1"
+      ],
+      "phase": "Archivada",
+      "approved_decisions": [
+        "No reabrir salvo petición explícita futura"
+      ],
+      "discarded_decisions": [
+        "Continuar generando instaladores de voz"
+      ],
+      "pending_tasks": [],
+      "blockers": [],
+      "last_confirmed_advance": "Fase de voz cerrada",
+      "next_probable_step": null,
+      "chat_ids": [
+        "CHAT-023",
+        "CHAT-024",
+        "CHAT-025"
+      ],
+      "doubtful_chat_ids": [],
+      "evidence_ids": [
+        "E-015"
+      ]
+    }
+  ],
+  "exact_duplicates": [
+    {
+      "duplicate_chat_id": "CHAT-004",
+      "canonical_chat_id": "CHAT-003"
+    }
+  ],
+  "partial_duplicates": [
+    {
+      "chat_id": "CHAT-006",
+      "canonical_chat_id": "CHAT-005",
+      "merged": false
+    }
+  ],
+  "independent_chat_ids": [
+    "CHAT-026",
+    "CHAT-027",
+    "CHAT-028",
+    "CHAT-030"
+  ],
+  "unclassified_chat_ids": [
+    "CHAT-029",
+    "CHAT-031"
+  ],
+  "untouched_chat_ids": [
+    "CHAT-029",
+    "CHAT-031"
+  ],
+  "original_source_files_modified": false
+}

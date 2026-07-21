@@ -1,0 +1,33 @@
+case_id,category,scenario,input_refs,expected_result
+AT-010-001,API,Crear análisis para lote válido,POST /analysis-runs,201 y run COMPLETED
+AT-010-002,API,Rechazar lote inexistente,batch_id inexistente,404 sin crear datos
+AT-010-003,RUN,Motor versionado,run,deterministic-ot010-v1
+AT-010-004,DUPLICATE,Duplicado exacto,CHAT-003/CHAT-004,CHAT-004 apunta a CHAT-003
+AT-010-005,INTEGRITY,Duplicado no elimina original,CHAT-004,Original conservado
+AT-010-006,DUPLICATE,Duplicado parcial,CHAT-005/CHAT-006,REVIEW_REQUIRED MEDIA
+AT-010-007,CONTROL,Duplicado parcial no fusiona,finding details,automatic_merge=false
+AT-010-008,VERSION,Versión vigente RouteFlow,V12,CURRENT
+AT-010-009,VERSION,Versión anterior RouteFlow,V10,PREVIOUS
+AT-010-010,VERSION,Pronombre resuelve versión,V11 + esta versión,DISCARDED
+AT-010-011,VERSION,Contexto por cláusula,V8/V9 mismo mensaje,V8 CURRENT y V9 DISCARDED
+AT-010-012,VERSION,V9 descartada,V9,DISCARDED
+AT-010-013,VERSION,V9.1 descartada,V9.1,DISCARDED
+AT-010-014,VERSION,Escáner vigente,V2,CURRENT
+AT-010-015,VERSION,Semver vigente,1.0.9,CURRENT
+AT-010-016,VERSION,Versión funcional inferida,V41,CURRENT MEDIA
+AT-010-017,DECISION,Decisión aprobada,CHAT-013/021,APPROVED
+AT-010-018,DECISION,Decisión descartada,CHAT-017/024/025,DISCARDED
+AT-010-019,DECISION,Decisión aplazada,CHAT-022,DEFERRED
+AT-010-020,DECISION,Decisión sustituida,CHAT-033,REPLACED
+AT-010-021,TASK,Tarea explícita,CHAT-005/006/010,PENDING ALTA
+AT-010-022,TASK,Tarea con baja evidencia,CHAT-029,PENDING BAJA
+AT-010-023,STATE,Estado en pausa,CHAT-020,EN_PAUSA
+AT-010-024,STATE,Estado pendiente,CHAT-022,PENDIENTE
+AT-010-025,STATE,Estado cerrado,CHAT-017,CERRADO
+AT-010-026,STATE,Estado archivado,CHAT-025,ARCHIVADO
+AT-010-027,STATE,Estado activo,CHAT-033,ACTIVO
+AT-010-028,PRECEDENCE,Prevalece evidencia reciente,CHAT-032/033,ACTIVO reemplaza CERRADO
+AT-010-029,EVIDENCE,Evidencia trazable,todos los findings,"chat, cita y precedencia"
+AT-010-030,FILTER,Filtrar findings,type/confidence,resultado paginado correcto
+AT-010-031,REPRODUCIBILITY,Repetir análisis,mismo batch,mismas stable_keys
+AT-010-032,INTEGRITY,Fuentes aprobadas inmutables,demo-data/source,SHA-256 sin cambios

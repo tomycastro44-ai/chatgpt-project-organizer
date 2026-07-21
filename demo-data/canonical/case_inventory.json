@@ -1,0 +1,131 @@
+{
+  "dataset_id": "CPO-OT006-DEMO-v1",
+  "cases": [
+    {
+      "case": "ACTIVE_WITH_NEW_PHASE",
+      "refs": [
+        "PRJ-STOCKCORE",
+        "CHAT-033"
+      ]
+    },
+    {
+      "case": "PENDING_PROJECT",
+      "refs": [
+        "PRJ-MULTIUSER",
+        "CHAT-021",
+        "CHAT-022"
+      ]
+    },
+    {
+      "case": "PAUSED_PROJECT",
+      "refs": [
+        "PRJ-ISSUETRACK",
+        "CHAT-020"
+      ]
+    },
+    {
+      "case": "CLOSED_PROJECT",
+      "refs": [
+        "PRJ-ORDERDESK",
+        "CHAT-017"
+      ]
+    },
+    {
+      "case": "ARCHIVED_PROJECT",
+      "refs": [
+        "PRJ-VOICE-ARCHIVE",
+        "CHAT-025"
+      ]
+    },
+    {
+      "case": "EXACT_DUPLICATE",
+      "refs": [
+        "CHAT-003",
+        "CHAT-004"
+      ]
+    },
+    {
+      "case": "PARTIAL_DUPLICATE",
+      "refs": [
+        "CHAT-005",
+        "CHAT-006"
+      ]
+    },
+    {
+      "case": "CURRENT_AND_PREVIOUS_VERSIONS",
+      "refs": [
+        "CHAT-001",
+        "CHAT-003"
+      ]
+    },
+    {
+      "case": "DISCARDED_VERSION",
+      "refs": [
+        "CHAT-002"
+      ]
+    },
+    {
+      "case": "REPLACED_DECISION",
+      "refs": [
+        "CHAT-032",
+        "CHAT-033"
+      ]
+    },
+    {
+      "case": "FORGOTTEN_TASKS",
+      "refs": [
+        "CHAT-005",
+        "CHAT-006",
+        "CHAT-010",
+        "CHAT-013"
+      ]
+    },
+    {
+      "case": "AMBIGUOUS_MEMBERSHIP",
+      "refs": [
+        "CHAT-014",
+        "CHAT-031"
+      ]
+    },
+    {
+      "case": "INDEPENDENT_CHATS",
+      "refs": [
+        "CHAT-026",
+        "CHAT-027",
+        "CHAT-028",
+        "CHAT-030"
+      ]
+    },
+    {
+      "case": "UNCLASSIFIED_CHAT",
+      "refs": [
+        "CHAT-029"
+      ]
+    },
+    {
+      "case": "BATCH_APPROVAL",
+      "refs": [
+        "APPLY-001"
+      ]
+    },
+    {
+      "case": "APPROVE_CORRECT_REJECT",
+      "refs": [
+        "REVIEW-001",
+        "APPLY-002"
+      ]
+    },
+    {
+      "case": "UNDO",
+      "refs": [
+        "UNDO-001"
+      ]
+    },
+    {
+      "case": "ORIGINALS_IMMUTABLE",
+      "refs": [
+        "BATCH-001"
+      ]
+    }
+  ]
+}

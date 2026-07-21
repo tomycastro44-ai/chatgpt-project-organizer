@@ -1,0 +1,20 @@
+{
+  "dataset": "CPO-OT006-DEMO-v1",
+  "files": [
+    {
+      "path": "demo-data/source/chats_notes.txt",
+      "size_bytes": 2330,
+      "sha256": "3b716768f99f35ac9002895c7326889a98fd0b1c689da3d76fa51b33cddcc08d"
+    },
+    {
+      "path": "demo-data/source/chats_primary.json",
+      "size_bytes": 8725,
+      "sha256": "7b96285cbb1e50fa986a285468949bac000ab1ae6b47adc394d34064a285ae7a"
+    },
+    {
+      "path": "demo-data/source/chats_secondary.csv",
+      "size_bytes": 1439,
+      "sha256": "2cda04cee85dfc911d6dfdb3643fb21e2f67b3382b14c4b80e13936b10573733"
+    }
+  ]
+}

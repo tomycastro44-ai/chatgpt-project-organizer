@@ -1,0 +1,36 @@
+=== CHAT-005 | PDF de rutas pendiente | 2026-06-05T17:00:00+02:00 ===
+USER [2026-06-05T17:00:00+02:00]: Queda pendiente ajustar el PDF partido a dos columnas.
+ASSISTANT [2026-06-05T17:02:00+02:00]: Tarea registrada para una fase posterior.
+
+=== CHAT-006 | Pendientes de reparto y oficina | 2026-06-06T10:00:00+02:00 ===
+USER [2026-06-06T10:00:00+02:00]: Sigue pendiente ajustar el PDF partido a dos columnas. Además, WhatsApp Oficina debe separarse por repartidor.
+ASSISTANT [2026-06-06T10:02:00+02:00]: Se mantienen ambas tareas pendientes.
+
+=== CHAT-010 | Mapa de racks pendiente | 2026-07-06T09:00:00+02:00 ===
+USER [2026-07-06T09:00:00+02:00]: El mapa funciona, pero el buscador es lento. Queda pendiente mejorarlo.
+
+=== CHAT-032 | Cerrar inventario | 2026-06-28T18:00:00+02:00 ===
+USER [2026-06-28T18:00:00+02:00]: Cuando terminemos la prueba de voz, podríamos dar por cerrado el inventario.
+
+=== CHAT-014 | Receptor móvil y buscador | 2026-07-07T10:00:00+02:00 ===
+USER [2026-07-07T10:00:00+02:00]: Mejora la velocidad del buscador cuando recibe un código desde el móvil, pero no cambies el protocolo de conexión.
+
+=== CHAT-020 | Pausa del despliegue | 2026-06-12T11:00:00+02:00 ===
+USER [2026-06-12T11:00:00+02:00]: Pausamos el despliegue a Mostrador y Oficina hasta revisar la red.
+ASSISTANT [2026-06-12T11:02:00+02:00]: El proyecto queda EN_PAUSA, no cerrado.
+
+=== CHAT-022 | No implementar multiusuario todavía | 2026-07-08T09:30:00+02:00 ===
+USER [2026-07-08T09:30:00+02:00]: No implementarlo todavía. Solo queda como proyecto pendiente.
+
+=== CHAT-025 | Cierre de la fase de voz | 2026-07-05T14:05:00+02:00 ===
+USER [2026-07-05T14:05:00+02:00]: No crear ni proponer más instaladores de voz salvo petición explícita futura.
+ASSISTANT [2026-07-05T14:06:00+02:00]: La iniciativa de voz queda archivada.
+
+=== CHAT-028 | Montaje de ventilador | 2026-07-14T21:00:00+02:00 ===
+USER [2026-07-14T21:00:00+02:00]: ¿El tornillo de la hélice debe apoyar en la parte plana del eje?
+
+=== CHAT-029 | Pendiente de ordenar | 2026-07-18T10:00:00+02:00 ===
+USER [2026-07-18T10:00:00+02:00]: Esto hay que ordenarlo más adelante.
+
+=== CHAT-031 | Velocidad y conexión | 2026-07-07T11:00:00+02:00 ===
+USER [2026-07-07T11:00:00+02:00]: Hay que mejorar la velocidad sin romper la conexión móvil ni la búsqueda del inventario.

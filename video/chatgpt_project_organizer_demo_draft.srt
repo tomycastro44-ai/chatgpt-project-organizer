@@ -1,0 +1,127 @@
+1
+00:00:00,000 --> 00:00:05,480
+AI conversations quickly become a second workspace. After months of use,
+
+2
+00:00:05,480 --> 00:00:10,961
+active projects are mixed with old versions, repeated decisions, forgotten
+
+3
+00:00:10,961 --> 00:00:16,441
+tasks, and unrelated questions. ChatGPT Project Organizer turns exported
+
+4
+00:00:16,441 --> 00:00:21,921
+conversations into structured, evidence-backed, and reversible projects.
+
+5
+00:00:21,921 --> 00:00:27,807
+The workflow starts by importing JSON, CSV, or TXT. Source files are copied
+
+6
+00:00:27,807 --> 00:00:33,693
+into protected storage, hashed, normalized, and never edited. The included
+
+7
+00:00:33,693 --> 00:00:39,579
+anonymized demo contains thirty-three conversations and fifty-one messages.
+
+8
+00:00:39,579 --> 00:00:44,631
+Before using a language model, deterministic rules identify objective signals:
+
+9
+00:00:44,631 --> 00:00:49,684
+exact and partial duplicates, version precedence, approved or rejected decisions,
+
+10
+00:00:49,684 --> 00:00:54,737
+pending tasks, and explicit project states. Every finding keeps the exact
+
+11
+00:00:54,737 --> 00:00:59,790
+conversation evidence that supports it.
+
+12
+00:00:59,790 --> 00:01:05,624
+GPT-5.6 then reconstructs semantic project context through the OpenAI Responses
+
+13
+00:01:05,624 --> 00:01:11,459
+API and a strict Pydantic Structured Output. It identifies seven projects,
+
+14
+00:01:11,459 --> 00:01:17,293
+current and discarded versions, decisions, tasks, blockers, memberships,
+
+15
+00:01:17,293 --> 00:01:23,128
+and ambiguous cases. The reproducible demo is clearly labelled as precomputed.
+
+16
+00:01:23,128 --> 00:01:28,962
+Live mode uses GPT-5.6 when an API key is configured.
+
+17
+00:01:28,962 --> 00:01:33,312
+The application generates one global proposal instead of asking the user
+
+18
+00:01:33,312 --> 00:01:37,662
+to organize every chat. Sixteen safe operations can be approved as a batch.
+
+19
+00:01:37,662 --> 00:01:42,011
+Only four exceptions require correction or rejection, so human attention
+
+20
+00:01:42,011 --> 00:01:46,361
+is focused where it matters.
+
+21
+00:01:46,361 --> 00:01:50,423
+A mandatory before-and-after preview shows exactly what will change. Applying
+
+22
+00:01:50,423 --> 00:01:54,485
+the proposal updates only a simulated derived workspace. The original conversations
+
+23
+00:01:54,485 --> 00:01:58,547
+remain untouched, and every authorized operation is written to an ordered
+
+24
+00:01:58,547 --> 00:02:02,609
+audit history.
+
+25
+00:02:02,609 --> 00:02:07,259
+Undo restores the exact previous workspace hash while preserving audit history.
+
+26
+00:02:07,259 --> 00:02:11,909
+Codex accelerated the architecture, React and FastAPI implementation, tests,
+
+27
+00:02:11,909 --> 00:02:16,560
+debugging, release validation, and documentation. Human decisions defined
+
+28
+00:02:16,560 --> 00:02:21,210
+immutable originals, evidence precedence, approval gates, and the reversible
+
+29
+00:02:21,210 --> 00:02:25,860
+workflow.
+
+30
+00:02:25,860 --> 00:02:30,668
+The result is a working prototype where AI performs the heavy analysis without
+
+31
+00:02:30,668 --> 00:02:35,476
+removing user control. It organizes knowledge, explains its decisions, protects
+
+32
+00:02:35,476 --> 00:02:40,284
+the source, and makes every operation reversible.

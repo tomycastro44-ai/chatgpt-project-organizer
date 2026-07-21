@@ -1,0 +1,49 @@
+case_id,category,requirement,target,expected
+ST-001,SCHEMA,Semantic run persisted,semantic_runs,Run linked to deterministic analysis
+ST-002,SCHEMA,Projects persisted,projects,Project key unique within run
+ST-003,SCHEMA,Memberships persisted,project_memberships,Chat relation and rationale stored
+ST-004,SCHEMA,Evidence persisted,project_evidence,Quote and precedence traceable
+ST-005,SCHEMA,Exceptions persisted,semantic_exceptions,Review cases stored without applying
+ST-006,API,Capabilities endpoint,/semantic-runs/capabilities,Demo/live availability explicit
+ST-007,API,Create semantic run,/semantic-runs,DEMO and LIVE accepted
+ST-008,API,List runs,/semantic-runs,History available
+ST-009,API,Get detail,/semantic-runs/{id},Projects and memory returned
+ST-010,DEMO,Demo clearly labelled,Frontend/API,Precomputed never shown as live
+ST-011,DEMO,Canonical project count,Approved fixture,7 projects
+ST-012,DEMO,Canonical exceptions,Approved fixture,4 exceptions
+ST-013,DEMO,Independent chats,Approved fixture,4 chats
+ST-014,DEMO,Unclassified chats,Approved fixture,CHAT-029 retained
+ST-015,STATE,Active state,StockCore,ACTIVO
+ST-016,STATE,Pending state,Multiuser,PENDIENTE
+ST-017,STATE,Paused state,IssueTrack,EN_PAUSA
+ST-018,STATE,Closed state,OrderDesk,CERRADO
+ST-019,STATE,Archived state,VoiceSearch,ARCHIVADO
+ST-020,VERSION,Current version,RouteFlow,v12
+ST-021,VERSION,Previous version,RouteFlow,v10
+ST-022,VERSION,Discarded version,RouteFlow,v11
+ST-023,PRECEDENCE,Latest decision wins,CHAT-032/033,StockCore remains ACTIVO
+ST-024,DUPLICATE,Exact duplicate excluded,CHAT-004,No separate membership
+ST-025,EXCEPTION,Cross-project ambiguity,CHAT-014,Review exception with two candidates
+ST-026,EXCEPTION,Low evidence,CHAT-029,BAJA and unclassified
+ST-027,MEMORY,Approved decisions,Project memory,Lists returned
+ST-028,MEMORY,Pending tasks,Project memory,Lists returned
+ST-029,MEMORY,Next probable step,Project memory,Value returned
+ST-030,EVIDENCE,External IDs only,Structured output,Unknown IDs rejected
+ST-031,VALIDATION,Duplicate project keys,Structured output,Rejected
+ST-032,VALIDATION,Dual confirmed membership,Structured output,Rejected
+ST-033,OPENAI,Responses API,Backend,client.responses.parse
+ST-034,OPENAI,Structured output,Backend,Pydantic schema
+ST-035,SECURITY,Server-side key,Frontend,No key field or value
+ST-036,SECURITY,No response storage,OpenAI request,store=false
+ST-037,SECURITY,Originals immutable,Semantic run,originals_modified false
+ST-038,LIVE,Missing key handled,LIVE mode,Controlled 409 response
+ST-039,LIVE,Mock structured provider,Service,Validated and persisted
+ST-040,HISTORY,Repeated runs,Semantic history,Independent run IDs
+ST-041,FRONTEND,Project workspace,React,Projects selectable
+ST-042,FRONTEND,Operational memory,React,Versions decisions tasks visible
+ST-043,FRONTEND,Evidence drawer,React,Evidence can be expanded
+ST-044,FRONTEND,Exceptions section,React,Not applied label visible
+ST-045,RESPONSIVE,Mobile layout,CSS,Single-column memory workspace
+ST-046,DEPENDENCIES,OpenAI SDK,requirements,Version pinned
+ST-047,BUILD,Frontend production build,Vite,Successful
+ST-048,TESTS,Full suite,Repository,All tests successful

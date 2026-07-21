@@ -1,0 +1,34 @@
+case_id,category,scenario,input_refs,expected_result,automated_test_id
+TC-001,IMPORT,JSON válido,SRC-JSON-001,Se importan todos sus chats,test_import_json
+TC-002,IMPORT,CSV válido,SRC-CSV-001,Se importan todos sus chats,test_import_csv
+TC-003,IMPORT,TXT válido,SRC-TXT-001,Se importan todos sus chats,test_import_txt
+TC-004,INTEGRIDAD,Originales inmutables,BATCH-001,Ningún archivo fuente cambia tras aplicar o deshacer,test_sources_immutable
+TC-005,NORMALIZACION,IDs únicos,33 chats,No existen IDs repetidos,test_unique_chat_ids
+TC-006,DUPLICADO_EXACTO,Copia de v12,CHAT-003/CHAT-004,Mismo fingerprint; CHAT-004 apunta a CHAT-003,test_exact_duplicate
+TC-007,DUPLICADO_PARCIAL,Pendiente de PDF ampliado,CHAT-005/CHAT-006,Se marca para revisión; no se fusiona automáticamente,test_partial_duplicate
+TC-008,VERSION,Versión vigente RouteFlow,CHAT-003,v12 vigente,test_routeflow_current_version
+TC-009,VERSION,Versión anterior RouteFlow,CHAT-001,v10 anterior,test_routeflow_previous_version
+TC-010,VERSION,Versión descartada RouteFlow,CHAT-002,v11 descartada,test_routeflow_discarded_version
+TC-011,ESTADO,Proyecto activo con fase futura,PRJ-STOCKCORE,"ACTIVO, no CERRADO",test_active_with_future_phase
+TC-012,PRECEDENCIA,Contradicción temporal,CHAT-032/CHAT-033,Prevalece la decisión explícita reciente,test_recent_decision_precedence
+TC-013,ESTADO,Proyecto pendiente,PRJ-MULTIUSER,PENDIENTE,test_pending_project
+TC-014,ESTADO,Proyecto en pausa,PRJ-ISSUETRACK,EN_PAUSA,test_paused_project
+TC-015,ESTADO,Proyecto cerrado,PRJ-ORDERDESK,CERRADO,test_closed_project
+TC-016,ESTADO,Proyecto archivado,PRJ-VOICE-ARCHIVE,ARCHIVADO,test_archived_project
+TC-017,TAREA,Pendientes RouteFlow,PRJ-ROUTEFLOW,Se recuperan dos tareas,test_routeflow_tasks
+TC-018,DECISION,Fase de voz descartada,PRJ-STOCKCORE,V9/V9.1 no vigentes,test_rejected_voice_versions
+TC-019,AMBIGUEDAD,Chat interproyecto,CHAT-014,Excepción; no asignar automáticamente,test_ambiguous_membership
+TC-020,AMBIGUEDAD,Chat con evidencia baja,CHAT-031,Excepción BAJA,test_low_confidence_membership
+TC-021,SIN_CLASIFICAR,Contenido insuficiente,CHAT-029,Permanece sin clasificar,test_unclassified_chat
+TC-022,INDEPENDIENTE,Consultas autocontenidas,CHAT-026/027/028/030,Se mantienen independientes,test_independent_chats
+TC-023,PROPUESTAS,Aprobación por lote,Propuestas seguras,Solo se aplican IDs aprobados,test_apply_safe_batch
+TC-024,PROTECCION,Excepciones intactas,CHAT-014/029/031,No cambian tras aplicación segura,test_exceptions_untouched
+TC-025,DESHACER,Restauración exacta,APPLY-001,Hash restaurado coincide con estado inicial,test_undo_exact_restore
+TC-026,AUDITORIA,Historial tras deshacer,UNDO-001,El historial se conserva,test_audit_preserved
+TC-027,SEGURIDAD,Sin secretos,Repositorio demo,No hay claves ni tokens,test_no_secrets
+TC-028,MEMORIA,Memoria operativa completa,7 proyectos,Todos contienen campos obligatorios,test_project_memory_fields
+TC-029,CONFIANZA,Valores permitidos,20 propuestas,Solo ALTA/MEDIA/BAJA,test_confidence_enum
+TC-030,COBERTURA,Estados del modelo,7 proyectos,ACTIVO/PENDIENTE/EN_PAUSA/CERRADO/ARCHIVADO presentes,test_state_coverage
+TC-031,REVISION,Corregir pertenencia ambigua,P-018/CHAT-014,Se asigna a PRJ-SCANLINK por decisión humana,test_correct_ambiguous_membership
+TC-032,REVISION,Rechazar clasificación insuficiente,P-017/P-019,CHAT-029 y CHAT-031 permanecen sin clasificar,test_reject_low_evidence
+TC-033,REVISION,Aprobar duplicado parcial sin fusión,P-020,Se registra relación y se conservan ambos chats,test_partial_duplicate_without_merge

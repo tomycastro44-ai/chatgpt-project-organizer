@@ -1,0 +1,801 @@
+{
+  "dataset_id": "CPO-OT006-DEMO-v1",
+  "schema_version": "1.0.0",
+  "created_at": "2026-07-20T22:00:00+02:00",
+  "import_batch": {
+    "id": "BATCH-001",
+    "source_files": [
+      {
+        "id": "SRC-JSON-001",
+        "filename": "chats_primary.json",
+        "format": "JSON",
+        "read_only": true
+      },
+      {
+        "id": "SRC-CSV-001",
+        "filename": "chats_secondary.csv",
+        "format": "CSV",
+        "read_only": true
+      },
+      {
+        "id": "SRC-TXT-001",
+        "filename": "chats_notes.txt",
+        "format": "TXT",
+        "read_only": true
+      }
+    ],
+    "originals_immutable": true
+  },
+  "chats": [
+    {
+      "id": "CHAT-001",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Reparto v10 estable",
+      "created_at": "2026-05-10T09:00:00+02:00",
+      "updated_at": "2026-05-10T09:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-001-1",
+          "role": "user",
+          "timestamp": "2026-05-10T09:00:00+02:00",
+          "content": "La versión v10 funciona. Déjala como base estable."
+        },
+        {
+          "id": "M-001-2",
+          "role": "assistant",
+          "timestamp": "2026-05-10T09:02:00+02:00",
+          "content": "Queda registrada v10 como versión estable y base válida."
+        }
+      ],
+      "tags": [
+        "routeflow",
+        "version"
+      ],
+      "content_fingerprint": "377517c4020a707ea4b8450ed144e2887d28bdba9f98106dbbe266bd9993200e"
+    },
+    {
+      "id": "CHAT-002",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Prueba sector radial v11",
+      "created_at": "2026-05-18T10:00:00+02:00",
+      "updated_at": "2026-05-18T12:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-002-1",
+          "role": "user",
+          "timestamp": "2026-05-18T10:00:00+02:00",
+          "content": "Prueba v11 con sector radial."
+        },
+        {
+          "id": "M-002-2",
+          "role": "assistant",
+          "timestamp": "2026-05-18T10:04:00+02:00",
+          "content": "Se prepara v11 para prueba."
+        },
+        {
+          "id": "M-002-3",
+          "role": "user",
+          "timestamp": "2026-05-18T12:00:00+02:00",
+          "content": "No queda estable. No usar esta versión como base."
+        }
+      ],
+      "tags": [
+        "routeflow",
+        "discarded-version"
+      ],
+      "content_fingerprint": "b50d1a9b0f93cca80d314698efab0f13a6e66f85db65b5acb82d836c3ac09888"
+    },
+    {
+      "id": "CHAT-003",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Reparto v12 validada",
+      "created_at": "2026-06-02T08:00:00+02:00",
+      "updated_at": "2026-06-02T08:05:00+02:00",
+      "messages": [
+        {
+          "id": "M-003-1",
+          "role": "user",
+          "timestamp": "2026-06-02T08:00:00+02:00",
+          "content": "La v12 con sector continuo ya está probada y funciona."
+        },
+        {
+          "id": "M-003-2",
+          "role": "assistant",
+          "timestamp": "2026-06-02T08:03:00+02:00",
+          "content": "v12 queda validada como versión vigente."
+        },
+        {
+          "id": "M-003-3",
+          "role": "user",
+          "timestamp": "2026-06-02T08:05:00+02:00",
+          "content": "Mantén v10 como versión anterior de referencia."
+        }
+      ],
+      "tags": [
+        "routeflow",
+        "current-version"
+      ],
+      "content_fingerprint": "810f2303098e078954c82700448099828a43c7608a2d58ee2b7cc8dd42aa1c71"
+    },
+    {
+      "id": "CHAT-004",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Copia - Reparto v12 validada",
+      "created_at": "2026-06-02T08:00:00+02:00",
+      "updated_at": "2026-06-02T08:05:00+02:00",
+      "messages": [
+        {
+          "id": "M-004-1",
+          "role": "user",
+          "timestamp": "2026-06-02T08:00:00+02:00",
+          "content": "La v12 con sector continuo ya está probada y funciona."
+        },
+        {
+          "id": "M-004-2",
+          "role": "assistant",
+          "timestamp": "2026-06-02T08:03:00+02:00",
+          "content": "v12 queda validada como versión vigente."
+        },
+        {
+          "id": "M-004-3",
+          "role": "user",
+          "timestamp": "2026-06-02T08:05:00+02:00",
+          "content": "Mantén v10 como versión anterior de referencia."
+        }
+      ],
+      "tags": [
+        "routeflow",
+        "exact-duplicate"
+      ],
+      "content_fingerprint": "810f2303098e078954c82700448099828a43c7608a2d58ee2b7cc8dd42aa1c71"
+    },
+    {
+      "id": "CHAT-005",
+      "source_file_id": "SRC-JSON-001",
+      "title": "PDF de rutas pendiente",
+      "created_at": "2026-06-05T17:00:00+02:00",
+      "updated_at": "2026-06-05T17:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-005-1",
+          "role": "user",
+          "timestamp": "2026-06-05T17:00:00+02:00",
+          "content": "Queda pendiente ajustar el PDF partido a dos columnas."
+        },
+        {
+          "id": "M-005-2",
+          "role": "assistant",
+          "timestamp": "2026-06-05T17:02:00+02:00",
+          "content": "Tarea registrada para una fase posterior."
+        }
+      ],
+      "tags": [
+        "routeflow",
+        "task"
+      ],
+      "content_fingerprint": "797b99cfe4b8a0d47d1b7b28f4dc45500e9154161ce236900c8f8ad069afdd42"
+    },
+    {
+      "id": "CHAT-006",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Pendientes de reparto y oficina",
+      "created_at": "2026-06-06T10:00:00+02:00",
+      "updated_at": "2026-06-06T10:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-006-1",
+          "role": "user",
+          "timestamp": "2026-06-06T10:00:00+02:00",
+          "content": "Sigue pendiente ajustar el PDF partido a dos columnas. Además, WhatsApp Oficina debe separarse por repartidor."
+        },
+        {
+          "id": "M-006-2",
+          "role": "assistant",
+          "timestamp": "2026-06-06T10:02:00+02:00",
+          "content": "Se mantienen ambas tareas pendientes."
+        }
+      ],
+      "tags": [
+        "routeflow",
+        "partial-duplicate",
+        "task"
+      ],
+      "content_fingerprint": "7e089741a4050d6f47809d77d97dfa6c08b6beaac86fc18770d7d210bf1f9690"
+    },
+    {
+      "id": "CHAT-007",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Inventario V8 en producción",
+      "created_at": "2026-06-20T09:00:00+02:00",
+      "updated_at": "2026-06-20T09:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-007-1",
+          "role": "user",
+          "timestamp": "2026-06-20T09:00:00+02:00",
+          "content": "La V8 está funcionando en producción con los datos reales."
+        },
+        {
+          "id": "M-007-2",
+          "role": "assistant",
+          "timestamp": "2026-06-20T09:02:00+02:00",
+          "content": "V8 queda como base estable del inventario."
+        }
+      ],
+      "tags": [
+        "stockcore",
+        "stable"
+      ],
+      "content_fingerprint": "e5f8982d8513f99513397839c2dbf8f9e0e8c34e394dd60bd307ea9a3609ca2f"
+    },
+    {
+      "id": "CHAT-008",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Inventario V9 con voz",
+      "created_at": "2026-06-25T11:00:00+02:00",
+      "updated_at": "2026-06-25T11:03:00+02:00",
+      "messages": [
+        {
+          "id": "M-008-1",
+          "role": "user",
+          "timestamp": "2026-06-25T11:00:00+02:00",
+          "content": "La V9 de voz no capta correctamente."
+        },
+        {
+          "id": "M-008-2",
+          "role": "assistant",
+          "timestamp": "2026-06-25T11:03:00+02:00",
+          "content": "La versión queda no validada."
+        }
+      ],
+      "tags": [
+        "stockcore",
+        "rejected"
+      ],
+      "content_fingerprint": "692a081814473bed54718928c5f923a17a175dabaa17487859acf6bcdaa1be31"
+    },
+    {
+      "id": "CHAT-009",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Regreso a V8 + SCAN",
+      "created_at": "2026-07-05T14:00:00+02:00",
+      "updated_at": "2026-07-05T14:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-009-1",
+          "role": "user",
+          "timestamp": "2026-07-05T14:00:00+02:00",
+          "content": "Cerramos la fase de voz. La única base vigente es V8 + SCAN WW estable."
+        },
+        {
+          "id": "M-009-2",
+          "role": "assistant",
+          "timestamp": "2026-07-05T14:02:00+02:00",
+          "content": "Se descartan V9 y V9.1. V8 + SCAN queda como base oficial."
+        }
+      ],
+      "tags": [
+        "stockcore",
+        "current-version",
+        "decision"
+      ],
+      "content_fingerprint": "80b7a89999a68a7a93a9b598ecae41fb5727c03780b4e10117907f8b51566b8b"
+    },
+    {
+      "id": "CHAT-010",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Mapa de racks pendiente",
+      "created_at": "2026-07-06T09:00:00+02:00",
+      "updated_at": "2026-07-06T09:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-010-1",
+          "role": "user",
+          "timestamp": "2026-07-06T09:00:00+02:00",
+          "content": "El mapa funciona, pero el buscador es lento. Queda pendiente mejorarlo."
+        }
+      ],
+      "tags": [
+        "stockcore",
+        "task"
+      ],
+      "content_fingerprint": "146514dcca3da00adb2765b3662bbd67d617bd3fe2c825f3fb484e3c26f5abe8"
+    },
+    {
+      "id": "CHAT-011",
+      "source_file_id": "SRC-JSON-001",
+      "title": "SCAN WW V2 validado",
+      "created_at": "2026-07-03T15:00:00+02:00",
+      "updated_at": "2026-07-03T15:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-011-1",
+          "role": "user",
+          "timestamp": "2026-07-03T15:00:00+02:00",
+          "content": "El APK V2 escanea y envía correctamente al PC."
+        },
+        {
+          "id": "M-011-2",
+          "role": "assistant",
+          "timestamp": "2026-07-03T15:02:00+02:00",
+          "content": "SCAN WW V2 queda validado."
+        }
+      ],
+      "tags": [
+        "scanlink",
+        "stable"
+      ],
+      "content_fingerprint": "2af4fa2ebfbb48f21aa5a8302bacb2d94adaa53f62152036d47d97f5b7320ad3"
+    },
+    {
+      "id": "CHAT-012",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Corrección del firewall",
+      "created_at": "2026-07-05T12:00:00+02:00",
+      "updated_at": "2026-07-05T12:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-012-1",
+          "role": "user",
+          "timestamp": "2026-07-05T12:00:00+02:00",
+          "content": "Al restaurar las reglas TCP 37841 y HTTP 37842 el móvil volvió a conectar."
+        }
+      ],
+      "tags": [
+        "scanlink",
+        "fix"
+      ],
+      "content_fingerprint": "83ca94dbb5237fe78db1ad44bac99d181b60f8d39098bc2ed6371c43ade8f55b"
+    },
+    {
+      "id": "CHAT-013",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Mejora visual del escáner",
+      "created_at": "2026-07-06T16:00:00+02:00",
+      "updated_at": "2026-07-06T16:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-013-1",
+          "role": "user",
+          "timestamp": "2026-07-06T16:00:00+02:00",
+          "content": "La próxima fase aprobada es mejorar solo la interfaz APK sin tocar la lógica."
+        }
+      ],
+      "tags": [
+        "scanlink",
+        "task"
+      ],
+      "content_fingerprint": "c9bb6f62c627224cf88e423f6f1f5f709fe507739440fbe026d3aba107426374"
+    },
+    {
+      "id": "CHAT-014",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Receptor móvil y buscador",
+      "created_at": "2026-07-07T10:00:00+02:00",
+      "updated_at": "2026-07-07T10:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-014-1",
+          "role": "user",
+          "timestamp": "2026-07-07T10:00:00+02:00",
+          "content": "Mejora la velocidad del buscador cuando recibe un código desde el móvil, pero no cambies el protocolo de conexión."
+        }
+      ],
+      "tags": [
+        "scanlink",
+        "ambiguous"
+      ],
+      "content_fingerprint": "6b6d1f64b9189300116dd1a44b623acc5d364fc03512fcf49d7e9728204df338"
+    },
+    {
+      "id": "CHAT-015",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Control de pedidos final",
+      "created_at": "2026-06-15T09:00:00+02:00",
+      "updated_at": "2026-06-15T09:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-015-1",
+          "role": "user",
+          "timestamp": "2026-06-15T09:00:00+02:00",
+          "content": "La versión 1.0.9 está instalada y validada."
+        },
+        {
+          "id": "M-015-2",
+          "role": "assistant",
+          "timestamp": "2026-06-15T09:02:00+02:00",
+          "content": "Se registra como versión final estable."
+        }
+      ],
+      "tags": [
+        "orderdesk",
+        "stable"
+      ],
+      "content_fingerprint": "8676c8e8b350a601a30acacce77a3f54ca0247e95c390f7c29df5281f9207ae9"
+    },
+    {
+      "id": "CHAT-016",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Corrección buscador CP",
+      "created_at": "2026-06-16T08:00:00+02:00",
+      "updated_at": "2026-06-16T08:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-016-1",
+          "role": "user",
+          "timestamp": "2026-06-16T08:00:00+02:00",
+          "content": "El error era buscar el número interno en el campo CP. Ya está corregido."
+        }
+      ],
+      "tags": [
+        "orderdesk",
+        "fix"
+      ],
+      "content_fingerprint": "1a4095a35bb71bca90ea89e1eb64e02a83a85533c32d9b70269ccd0d6837692d"
+    },
+    {
+      "id": "CHAT-017",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Audio descartado en pedidos",
+      "created_at": "2026-06-17T12:00:00+02:00",
+      "updated_at": "2026-06-17T12:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-017-1",
+          "role": "user",
+          "timestamp": "2026-06-17T12:00:00+02:00",
+          "content": "La opción de audio queda descartada. No hay más mejoras aprobadas."
+        },
+        {
+          "id": "M-017-2",
+          "role": "assistant",
+          "timestamp": "2026-06-17T12:02:00+02:00",
+          "content": "El proyecto puede considerarse terminado."
+        }
+      ],
+      "tags": [
+        "orderdesk",
+        "closed"
+      ],
+      "content_fingerprint": "4f96c37f7e5efdcad18ae9c0afb372ff12fe3e75f8f268b21265fdab67c9599e"
+    },
+    {
+      "id": "CHAT-018",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Gestión de incidencias V41",
+      "created_at": "2026-06-10T09:00:00+02:00",
+      "updated_at": "2026-06-10T09:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-018-1",
+          "role": "user",
+          "timestamp": "2026-06-10T09:00:00+02:00",
+          "content": "V41 abre correctamente y conserva los datos."
+        }
+      ],
+      "tags": [
+        "issuetrack",
+        "stable"
+      ],
+      "content_fingerprint": "57bef6a7e56c40600a4a079ff9277821ad6068d03ace51548fd0d709c29ac1e2"
+    },
+    {
+      "id": "CHAT-019",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Instalador central validado",
+      "created_at": "2026-06-11T10:00:00+02:00",
+      "updated_at": "2026-06-11T10:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-019-1",
+          "role": "user",
+          "timestamp": "2026-06-11T10:00:00+02:00",
+          "content": "El instalador Central se ha probado y arranca bien."
+        }
+      ],
+      "tags": [
+        "issuetrack",
+        "validated"
+      ],
+      "content_fingerprint": "c843a7acdc1350b990dbc81bc847793511b929fd453285ec7e487faf1f9c9a78"
+    },
+    {
+      "id": "CHAT-020",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Pausa del despliegue",
+      "created_at": "2026-06-12T11:00:00+02:00",
+      "updated_at": "2026-06-12T11:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-020-1",
+          "role": "user",
+          "timestamp": "2026-06-12T11:00:00+02:00",
+          "content": "Pausamos el despliegue a Mostrador y Oficina hasta revisar la red."
+        },
+        {
+          "id": "M-020-2",
+          "role": "assistant",
+          "timestamp": "2026-06-12T11:02:00+02:00",
+          "content": "El proyecto queda EN_PAUSA, no cerrado."
+        }
+      ],
+      "tags": [
+        "issuetrack",
+        "paused"
+      ],
+      "content_fingerprint": "1a0c83b302350fdc54ebec0f489d20ae85950b977f4f67150dca8c0b47bee83b"
+    },
+    {
+      "id": "CHAT-021",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Arquitectura multiusuario",
+      "created_at": "2026-07-08T09:00:00+02:00",
+      "updated_at": "2026-07-08T09:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-021-1",
+          "role": "user",
+          "timestamp": "2026-07-08T09:00:00+02:00",
+          "content": "Queda aprobada una futura arquitectura multiusuario con base central."
+        }
+      ],
+      "tags": [
+        "multiuser",
+        "approved"
+      ],
+      "content_fingerprint": "bc28ad8523f1d1e864d328d5c69bce4d032f3a06783235443240c0a8b6c74720"
+    },
+    {
+      "id": "CHAT-022",
+      "source_file_id": "SRC-TXT-001",
+      "title": "No implementar multiusuario todavía",
+      "created_at": "2026-07-08T09:30:00+02:00",
+      "updated_at": "2026-07-08T09:30:00+02:00",
+      "messages": [
+        {
+          "id": "M-022-1",
+          "role": "user",
+          "timestamp": "2026-07-08T09:30:00+02:00",
+          "content": "No implementarlo todavía. Solo queda como proyecto pendiente."
+        }
+      ],
+      "tags": [
+        "multiuser",
+        "pending"
+      ],
+      "content_fingerprint": "907f482fc92f377392eae62b3f06c7a8f70d4319f06afa0295db0f613bb95d1c"
+    },
+    {
+      "id": "CHAT-023",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Búsqueda por voz V9",
+      "created_at": "2026-06-24T08:00:00+02:00",
+      "updated_at": "2026-06-24T08:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-023-1",
+          "role": "user",
+          "timestamp": "2026-06-24T08:00:00+02:00",
+          "content": "Crear una versión de consulta por voz."
+        }
+      ],
+      "tags": [
+        "voicearchive",
+        "proposal"
+      ],
+      "content_fingerprint": "587b838c851fc587f43e69185bcb021e91ba644d6363fbbb82cec3a535d041f0"
+    },
+    {
+      "id": "CHAT-024",
+      "source_file_id": "SRC-JSON-001",
+      "title": "Búsqueda por voz V9.1 fallida",
+      "created_at": "2026-06-26T08:00:00+02:00",
+      "updated_at": "2026-06-26T08:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-024-1",
+          "role": "user",
+          "timestamp": "2026-06-26T08:00:00+02:00",
+          "content": "V9.1 sigue sin captar la voz. Se rechaza."
+        }
+      ],
+      "tags": [
+        "voicearchive",
+        "rejected"
+      ],
+      "content_fingerprint": "c9f70fc76b9c16735b4c3e40b1d5d739942d217f5bbdc29f704c67aebb400a54"
+    },
+    {
+      "id": "CHAT-025",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Cierre de la fase de voz",
+      "created_at": "2026-07-05T14:05:00+02:00",
+      "updated_at": "2026-07-05T14:06:00+02:00",
+      "messages": [
+        {
+          "id": "M-025-1",
+          "role": "user",
+          "timestamp": "2026-07-05T14:05:00+02:00",
+          "content": "No crear ni proponer más instaladores de voz salvo petición explícita futura."
+        },
+        {
+          "id": "M-025-2",
+          "role": "assistant",
+          "timestamp": "2026-07-05T14:06:00+02:00",
+          "content": "La iniciativa de voz queda archivada."
+        }
+      ],
+      "tags": [
+        "voicearchive",
+        "archived"
+      ],
+      "content_fingerprint": "947a67af6e8fc03d81c976b12e8f1d390b7215d67113cf7069a10c32fa22b144"
+    },
+    {
+      "id": "CHAT-026",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Arandela DIN más ancha",
+      "created_at": "2026-07-17T09:20:00+02:00",
+      "updated_at": "2026-07-17T09:20:00+02:00",
+      "messages": [
+        {
+          "id": "M-026-1",
+          "role": "user",
+          "timestamp": "2026-07-17T09:20:00+02:00",
+          "content": "La arandela DIN 9021, ¿cuál es la equivalente todavía más ancha?"
+        }
+      ],
+      "tags": [
+        "independent",
+        "technical"
+      ],
+      "content_fingerprint": "35be61229218653531281de0b117679ecda33bc2f0169d8faae28c7c11a27422"
+    },
+    {
+      "id": "CHAT-027",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Talla de camiseta",
+      "created_at": "2026-07-11T20:00:00+02:00",
+      "updated_at": "2026-07-11T20:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-027-1",
+          "role": "user",
+          "timestamp": "2026-07-11T20:00:00+02:00",
+          "content": "No sé si comprar talla L o XL."
+        }
+      ],
+      "tags": [
+        "independent",
+        "personal"
+      ],
+      "content_fingerprint": "344f592fe507f13749127218c4699d13ae3331418fa95e085571905f24790423"
+    },
+    {
+      "id": "CHAT-028",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Montaje de ventilador",
+      "created_at": "2026-07-14T21:00:00+02:00",
+      "updated_at": "2026-07-14T21:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-028-1",
+          "role": "user",
+          "timestamp": "2026-07-14T21:00:00+02:00",
+          "content": "¿El tornillo de la hélice debe apoyar en la parte plana del eje?"
+        }
+      ],
+      "tags": [
+        "independent",
+        "technical"
+      ],
+      "content_fingerprint": "2b843fa820e01a88294178920fa85f94a4e181f854a416fcceceef6ca5463373"
+    },
+    {
+      "id": "CHAT-029",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Pendiente de ordenar",
+      "created_at": "2026-07-18T10:00:00+02:00",
+      "updated_at": "2026-07-18T10:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-029-1",
+          "role": "user",
+          "timestamp": "2026-07-18T10:00:00+02:00",
+          "content": "Esto hay que ordenarlo más adelante."
+        }
+      ],
+      "tags": [
+        "unclassified",
+        "low-evidence"
+      ],
+      "content_fingerprint": "513c134607ac4df15a72e4eb38a39dce7253838d1b4d72f92fff8c128321f2a3"
+    },
+    {
+      "id": "CHAT-030",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Consulta sobre liderazgo",
+      "created_at": "2026-07-11T11:00:00+02:00",
+      "updated_at": "2026-07-11T11:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-030-1",
+          "role": "user",
+          "timestamp": "2026-07-11T11:00:00+02:00",
+          "content": "¿Un líder nace o se hace?"
+        }
+      ],
+      "tags": [
+        "independent",
+        "personal"
+      ],
+      "content_fingerprint": "8e7616cd2efc519cf565cd2159165bf305194400cd92bd3790fc278cf2a92588"
+    },
+    {
+      "id": "CHAT-031",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Velocidad y conexión",
+      "created_at": "2026-07-07T11:00:00+02:00",
+      "updated_at": "2026-07-07T11:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-031-1",
+          "role": "user",
+          "timestamp": "2026-07-07T11:00:00+02:00",
+          "content": "Hay que mejorar la velocidad sin romper la conexión móvil ni la búsqueda del inventario."
+        }
+      ],
+      "tags": [
+        "ambiguous",
+        "cross-project"
+      ],
+      "content_fingerprint": "de41f72d2aa90c9080b7c794e794726377d549b9cac5eb770b4877eb4a971db2"
+    },
+    {
+      "id": "CHAT-032",
+      "source_file_id": "SRC-TXT-001",
+      "title": "Cerrar inventario",
+      "created_at": "2026-06-28T18:00:00+02:00",
+      "updated_at": "2026-06-28T18:00:00+02:00",
+      "messages": [
+        {
+          "id": "M-032-1",
+          "role": "user",
+          "timestamp": "2026-06-28T18:00:00+02:00",
+          "content": "Cuando terminemos la prueba de voz, podríamos dar por cerrado el inventario."
+        }
+      ],
+      "tags": [
+        "stockcore",
+        "contradictory-old"
+      ],
+      "content_fingerprint": "d00b548f150e6e2e08fbe8f1a3147fbdaa238ecf14a9ebc25d9243a5559692ab"
+    },
+    {
+      "id": "CHAT-033",
+      "source_file_id": "SRC-CSV-001",
+      "title": "Inventario sigue activo",
+      "created_at": "2026-07-12T09:00:00+02:00",
+      "updated_at": "2026-07-12T09:02:00+02:00",
+      "messages": [
+        {
+          "id": "M-033-1",
+          "role": "user",
+          "timestamp": "2026-07-12T09:00:00+02:00",
+          "content": "El inventario sigue en uso. La mejora multiusuario queda aprobada para una fase futura."
+        },
+        {
+          "id": "M-033-2",
+          "role": "assistant",
+          "timestamp": "2026-07-12T09:02:00+02:00",
+          "content": "El proyecto permanece ACTIVO; no debe cerrarse."
+        }
+      ],
+      "tags": [
+        "stockcore",
+        "state-override"
+      ],
+      "content_fingerprint": "adc63214506aa379981bd77cb36f0f0d0007108520761b03f170f35bed995962"
+    }
+  ]
+}

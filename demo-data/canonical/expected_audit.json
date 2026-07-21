@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "seq": 1,
+      "type": "ANALYSIS_CREATED",
+      "ref": "ANALYSIS-001"
+    },
+    {
+      "seq": 2,
+      "type": "SAFE_BATCH_APPROVED",
+      "approved": [
+        "P-001",
+        "P-002",
+        "P-003",
+        "P-004",
+        "P-005",
+        "P-006",
+        "P-007",
+        "P-008",
+        "P-009",
+        "P-010",
+        "P-011",
+        "P-012",
+        "P-013",
+        "P-014",
+        "P-015",
+        "P-016"
+      ]
+    },
+    {
+      "seq": 3,
+      "type": "EXCEPTION_REVIEW_RECORDED",
+      "ref": "REVIEW-001"
+    },
+    {
+      "seq": 4,
+      "type": "OPERATIONS_APPLIED",
+      "ref": "APPLY-002"
+    },
+    {
+      "seq": 5,
+      "type": "UNDO_EXECUTED",
+      "ref": "UNDO-001",
+      "reverted": "APPLY-002"
+    }
+  ]
+}
