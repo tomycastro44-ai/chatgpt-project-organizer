@@ -1,0 +1,58 @@
+{
+  "ot_code": "O.T. 013",
+  "status": "APROBADA",
+  "deliverable": "CHATGPT_PROJECT_ORGANIZER_OT013_INTEGRATED_VALIDATION_v1_APPROVED.zip",
+  "version_commit": "OT013-v1",
+  "approval_date": "2026-07-21",
+  "phase": "FASE 5 — VALIDACIÓN",
+  "phase_status": "APROBADA Y CERRADA",
+  "technical_release_status": "OFICIAL",
+  "validation": {
+    "status": "OK",
+    "backend_and_contract_tests": 63,
+    "frontend_tests": 4,
+    "acceptance_cases": 50,
+    "isolated_end_to_end_runs": 2,
+    "typescript_vite_build": "OK",
+    "clean_install_from_zip": "OK",
+    "frontend_backend_startup": "OK",
+    "frontend_backend_proxy": "OK",
+    "pip_check": "OK",
+    "npm_production_vulnerabilities": 0,
+    "secret_scan": "OK",
+    "source_integrity_sha256": "OK",
+    "undo_exact": true,
+    "originals_modified": 0
+  },
+  "canonical_integrated_result": {
+    "source_files": 3,
+    "chats": 33,
+    "messages": 51,
+    "deterministic_findings": 45,
+    "evidence": 61,
+    "projects": 7,
+    "memberships": 29,
+    "proposals": 20,
+    "safe_proposals": 16,
+    "exceptions": 4,
+    "audit_events": 9
+  },
+  "valid_bases_next": [
+    "CHATGPT_PROJECT_ORGANIZER_OT006_CANONICAL_DATASET_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT007_VISUAL_DESIGN_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT008_TECHNICAL_FOUNDATION_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT009_FUNCTIONAL_IMPORT_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT010_DETERMINISTIC_ANALYSIS_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT011_SEMANTIC_PROJECT_MEMORY_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT012_REVERSIBLE_WORKFLOW_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT013_INTEGRATED_VALIDATION_v1_APPROVED.zip"
+  ],
+  "next_scope": [
+    "documentación final de entrega",
+    "repositorio público",
+    "capturas definitivas",
+    "vídeo",
+    "identificador /feedback de Codex",
+    "envío en Devpost"
+  ]
+}

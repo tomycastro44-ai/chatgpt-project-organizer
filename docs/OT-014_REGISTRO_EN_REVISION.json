@@ -1,0 +1,23 @@
+{
+  "ot_code": "O.T. 014",
+  "status": "EN_REVISION",
+  "version": "OT014-v1",
+  "phase": "FASE 6 — DOCUMENTACIÓN",
+  "completed": [
+    "final English README",
+    "testing instructions",
+    "Codex and GPT-5.6 documentation",
+    "Devpost copy",
+    "verified rules checklist",
+    "9 final screenshots",
+    "160-second narrated demo draft",
+    "SRT captions",
+    "repository-ready package"
+  ],
+  "requires_user_account": [
+    "publish repository",
+    "run /feedback in primary Codex thread",
+    "upload public YouTube video",
+    "submit Devpost form"
+  ]
+}

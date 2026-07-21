@@ -1,0 +1,18 @@
+{
+  "ot_code": "O.T. 013",
+  "status": "EN_REVISION",
+  "version": "OT013-v1",
+  "phase": "FASE 5 — VALIDACIÓN",
+  "base": "OT012-v1",
+  "backend_and_contract_tests": 63,
+  "frontend_tests": 4,
+  "acceptance_cases": 50,
+  "integrated_demo_executions": 2,
+  "clean_install": "OK",
+  "production_build": "OK",
+  "runtime_startup": "OK",
+  "dependency_checks": "OK",
+  "secret_scan": "OK",
+  "original_integrity": "OK",
+  "exact_undo": "OK"
+}

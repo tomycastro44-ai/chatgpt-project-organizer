@@ -1,0 +1,32 @@
+{
+  "ot_code": "O.T. 010",
+  "status": "EN_REVISION",
+  "deliverable": "CHATGPT_PROJECT_ORGANIZER_OT010_DETERMINISTIC_ANALYSIS_v1.zip",
+  "version_commit": "OT010-v1",
+  "base": "OT009-v1 APROBADA",
+  "validation": {
+    "status": "OK",
+    "backend_tests": 31,
+    "repository_contracts": 7,
+    "frontend_tests": 3,
+    "acceptance_cases": 32,
+    "chats": 33,
+    "messages": 51,
+    "findings": 45,
+    "evidences": 61,
+    "clean_install": "OK",
+    "runtime_frontend_backend": "OK",
+    "pip_check": "OK",
+    "npm_production_vulnerabilities": 0,
+    "source_integrity_sha256": "OK"
+  },
+  "not_implemented": [
+    "GPT-5.6",
+    "semantic project grouping",
+    "proposals",
+    "apply operations",
+    "application audit",
+    "undo"
+  ],
+  "next_action": "Review and approve O.T. 010 before starting the next O.T."
+}

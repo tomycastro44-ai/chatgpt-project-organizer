@@ -1,0 +1,9 @@
+{
+  "ot_code": "O.T. 011",
+  "status": "EN_REVISION",
+  "deliverable": "CHATGPT_PROJECT_ORGANIZER_OT011_SEMANTIC_PROJECT_MEMORY_v1.zip",
+  "version_commit": "OT011-v1",
+  "base": "OT010-v1 approved",
+  "validation": "OT-011 VALIDATION: OK",
+  "next_scope": "Proposals, review, simulated application, audit and Undo"
+}

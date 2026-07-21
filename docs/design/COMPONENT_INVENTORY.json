@@ -1,0 +1,114 @@
+{
+  "components": [
+    {
+      "id": "C-01",
+      "name": "ProjectSidebar",
+      "purpose": "Chats, projects and active organization run",
+      "states": [
+        "default",
+        "collapsed-mobile"
+      ]
+    },
+    {
+      "id": "C-02",
+      "name": "TopContextBar",
+      "purpose": "Current stage, dataset and non-destructive status",
+      "states": [
+        "default"
+      ]
+    },
+    {
+      "id": "C-03",
+      "name": "PrimaryAction",
+      "purpose": "Single dominant next action",
+      "states": [
+        "enabled",
+        "disabled",
+        "loading"
+      ]
+    },
+    {
+      "id": "C-04",
+      "name": "AnalysisSummary",
+      "purpose": "Counts for projects, duplicates, tasks and exceptions",
+      "states": [
+        "compact",
+        "expanded"
+      ]
+    },
+    {
+      "id": "C-05",
+      "name": "ProposalGroup",
+      "purpose": "Group related proposed operations",
+      "states": [
+        "safe",
+        "review-required",
+        "rejected"
+      ]
+    },
+    {
+      "id": "C-06",
+      "name": "EvidenceDrawer",
+      "purpose": "Show phrases and affected chats supporting a proposal",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "C-07",
+      "name": "ProjectMemoryCard",
+      "purpose": "Current version, state, decisions, pending tasks and evidence",
+      "states": [
+        "summary",
+        "detail"
+      ]
+    },
+    {
+      "id": "C-08",
+      "name": "ExceptionCard",
+      "purpose": "Resolve ambiguous or low-confidence cases",
+      "states": [
+        "unresolved",
+        "corrected",
+        "rejected"
+      ]
+    },
+    {
+      "id": "C-09",
+      "name": "PreviewDiff",
+      "purpose": "Before/after simulated structure without changing originals",
+      "states": [
+        "list",
+        "project-tree"
+      ]
+    },
+    {
+      "id": "C-10",
+      "name": "AuditTimeline",
+      "purpose": "Applied operations and undo entry point",
+      "states": [
+        "applied",
+        "undone"
+      ]
+    },
+    {
+      "id": "C-11",
+      "name": "IntegrityBanner",
+      "purpose": "Persistent confirmation that originals remain untouched",
+      "states": [
+        "neutral",
+        "success"
+      ]
+    },
+    {
+      "id": "C-12",
+      "name": "MobileBottomAction",
+      "purpose": "Keep next action reachable on small screens",
+      "states": [
+        "visible",
+        "hidden"
+      ]
+    }
+  ]
+}

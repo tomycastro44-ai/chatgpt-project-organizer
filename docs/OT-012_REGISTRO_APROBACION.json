@@ -1,0 +1,48 @@
+{
+  "ot_code": "O.T. 012",
+  "status": "APROBADA",
+  "deliverable": "CHATGPT_PROJECT_ORGANIZER_OT012_REVERSIBLE_WORKFLOW_v1_APPROVED.zip",
+  "version_commit": "OT012-v1",
+  "approval_date": "2026-07-21",
+  "phase": "FASE 4 — CONSTRUCCIÓN",
+  "phase_status": "EN_CURSO",
+  "validation": {
+    "status": "OK",
+    "backend_and_contract_tests": 63,
+    "frontend_tests": 4,
+    "acceptance_cases": 68,
+    "total_proposals": 20,
+    "safe_proposals": 16,
+    "exceptions": 4,
+    "organized_projects": 7,
+    "audit_events": 9,
+    "apply_status": "APPLIED",
+    "undo_status": "COMPLETED",
+    "restored_hash_matches_previous_hash": true,
+    "originals_modified": 0,
+    "clean_install_from_zip": "OK",
+    "typescript_vite_build": "OK",
+    "pip_check": "OK",
+    "npm_production_vulnerabilities": 0,
+    "source_integrity_sha256": "OK"
+  },
+  "functional_mvp_core": "COMPLETO",
+  "valid_bases_next": [
+    "CHATGPT_PROJECT_ORGANIZER_OT006_CANONICAL_DATASET_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT007_VISUAL_DESIGN_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT008_TECHNICAL_FOUNDATION_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT009_FUNCTIONAL_IMPORT_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT010_DETERMINISTIC_ANALYSIS_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT011_SEMANTIC_PROJECT_MEMORY_v1_APPROVED.zip",
+    "CHATGPT_PROJECT_ORGANIZER_OT012_REVERSIBLE_WORKFLOW_v1_APPROVED.zip"
+  ],
+  "preservation_rule": "No sustituir, regenerar ni descartar las bases aprobadas O.T. 006–012 salvo corrección crítica demostrada o cambio expresamente autorizado.",
+  "next_scope": [
+    "validación integral end-to-end",
+    "documentación final",
+    "capturas",
+    "vídeo",
+    "repositorio público",
+    "entrega Devpost"
+  ]
+}

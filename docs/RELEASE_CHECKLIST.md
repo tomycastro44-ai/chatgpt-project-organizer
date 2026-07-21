@@ -1,0 +1,21 @@
+# Technical release checklist
+
+- [x] Approved O.T. 012 used as the only functional base.
+- [x] Backend and repository tests pass.
+- [x] Frontend tests pass.
+- [x] Production frontend build succeeds.
+- [x] Complete workflow passes through the public API.
+- [x] Demo flow is reproducible without an API key.
+- [x] Original source hashes remain unchanged.
+- [x] Apply changes only the derived workspace.
+- [x] Undo restores the exact prior state.
+- [x] Audit history remains after Undo.
+- [x] No API key appears in frontend or release files.
+- [x] Runtime databases and imported files are excluded.
+- [x] Dependency checks pass.
+- [x] Architecture, security, testing and limitations are documented.
+- [x] Clean package includes setup and validation scripts.
+- [ ] Public repository URL added.
+- [ ] Public demo/video URL added.
+- [ ] Codex `/feedback` session identifier added.
+- [ ] Devpost submission completed.

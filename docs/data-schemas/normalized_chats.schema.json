@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/normalized_chats.schema.json",
+  "type": "object",
+  "required": [
+    "dataset_id",
+    "schema_version",
+    "import_batch",
+    "chats"
+  ],
+  "properties": {
+    "dataset_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "import_batch": {
+      "type": "object",
+      "required": [
+        "id",
+        "source_files",
+        "originals_immutable"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "originals_immutable": {
+          "const": true
+        },
+        "source_files": {
+          "type": "array",
+          "minItems": 1
+        }
+      }
+    },
+    "chats": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source_file_id",
+          "title",
+          "created_at",
+          "messages",
+          "content_fingerprint"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "source_file_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "messages": {
+            "type": "array",
+            "minItems": 1
+          },
+          "content_fingerprint": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    }
+  }
+}

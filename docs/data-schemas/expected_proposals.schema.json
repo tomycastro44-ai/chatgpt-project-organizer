@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/expected_proposals.schema.json",
+  "type": "object",
+  "required": [
+    "analysis_run_id",
+    "safe_proposal_ids",
+    "exception_proposal_ids",
+    "proposal_items"
+  ],
+  "properties": {
+    "proposal_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "operation",
+          "target_ids",
+          "confidence",
+          "review_required",
+          "evidence_ids",
+          "reason"
+        ],
+        "properties": {
+          "confidence": {
+            "enum": [
+              "ALTA",
+              "MEDIA",
+              "BAJA"
+            ]
+          },
+          "review_required": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

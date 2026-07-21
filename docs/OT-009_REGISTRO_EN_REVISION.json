@@ -1,0 +1,23 @@
+{
+  "ot_code": "O.T. 009",
+  "status": "EN_REVISION",
+  "deliverable": "CHATGPT_PROJECT_ORGANIZER_OT009_FUNCTIONAL_IMPORT_v1.zip",
+  "version_commit": "OT009-v1",
+  "validation": {
+    "backend_tests": 16,
+    "repository_contract_tests": 4,
+    "frontend_tests": 2,
+    "acceptance_cases": 30,
+    "approved_source_files": 3,
+    "normalized_chats": 33,
+    "normalized_messages": 51,
+    "source_integrity": "OK",
+    "frontend_build": "OK",
+    "clean_install": "OK",
+    "runtime_startup": "OK",
+    "npm_production_vulnerabilities": 0
+  },
+  "date": "2026-07-20",
+  "base": "OT008-v1",
+  "next_action": "Revisión y aprobación formal de O.T. 009"
+}

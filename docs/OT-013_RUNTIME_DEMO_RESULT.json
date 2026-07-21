@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "batch_id": "3b6e2f0e-98f4-4eba-a39f-c6abeb11a34f",
+  "analysis_run_id": "66d2c7d2-e964-4e71-85f4-a193d55fcdc7",
+  "semantic_run_id": "3e36588b-30db-4ddf-90e5-7bd16ae6c06e",
+  "proposal_run_id": "8f16f361-2419-4852-bd23-e824fe3cd261",
+  "operation_id": "61b2b25a-93b5-45fa-88be-c623b37c4257",
+  "chats": 33,
+  "messages": 51,
+  "findings": 45,
+  "evidence": 61,
+  "projects": 7,
+  "proposals": 20,
+  "audit_events": 9,
+  "apply_hash": "6b9ffe441750e3d88ef5f1783e5dee7bd82d447c2d1da00623f3191c010f18be",
+  "restored_hash": "ab3102d1c544d534720e2c5abdea012d854c7aa0178f6c340ecc01be68bbd705",
+  "originals_modified": false
+}

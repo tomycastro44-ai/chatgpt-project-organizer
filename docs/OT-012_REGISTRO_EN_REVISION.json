@@ -1,0 +1,16 @@
+{
+  "ot_code": "O.T. 012",
+  "status": "EN_REVISION",
+  "version_commit": "OT012-v1",
+  "base": "OT011-v1 APPROVED",
+  "deliverable": "CHATGPT_PROJECT_ORGANIZER_OT012_REVERSIBLE_WORKFLOW_v1.zip",
+  "validation": {
+    "backend_and_contract_tests": 63,
+    "frontend_tests": 4,
+    "acceptance_cases": 68,
+    "e2e": "OK",
+    "npm_production_vulnerabilities": 0,
+    "original_integrity": "OK"
+  },
+  "next_action": "Revisión y aprobación formal."
+}
